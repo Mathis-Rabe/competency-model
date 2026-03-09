@@ -4,11 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Interactive Undergraduate Competency Model</title>
-<meta name="description" content="Interactive companion to: Rabe, M., Buitkamp, L. F., &amp; Persike, M. (in preparation). Towards a comprehensive model of university undergraduate students' competencies.">
-<style>
-  body { margin: 0; padding: 0; }
-  * { box-sizing: border-box; }
-</style>
+<meta name="description" content="Interactive companion to: Rabe, M., Buitkamp, L. F., &amp; Persike, M. (in preparation). Towards a comprehensive model of university undergraduate students competencies.">
+<style>body{margin:0;padding:0}*{box-sizing:border-box}</style>
 </head>
 <body>
 <div id="root"></div>
@@ -20,7 +17,6 @@ const {
   useMemo,
   useEffect
 } = React;
-
 // Pure SVG charts - no external dependencies needed
 
 const C = {
@@ -1531,15 +1527,21 @@ function BISMatrix({
   const cellActive = (opId, conId) => hasOp(opId) && hasCon(conId);
   return /*#__PURE__*/React.createElement("div", {
     style: {
+      overflowX: "auto",
+      WebkitOverflowScrolling: "touch"
+    }
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
       borderRadius: 14,
       overflow: "hidden",
       border: `1.5px solid ${C.g3}`,
-      background: C.w
+      background: C.w,
+      minWidth: 480
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
       display: "grid",
-      gridTemplateColumns: "1fr 1fr 1fr 1fr",
+      gridTemplateColumns: "2fr 1fr 1fr 1fr",
       borderBottom: `1.5px solid ${C.g3}`
     }
   }, /*#__PURE__*/React.createElement("div", {
@@ -1579,7 +1581,7 @@ function BISMatrix({
       key: op.id,
       style: {
         display: "grid",
-        gridTemplateColumns: "1fr 1fr 1fr 1fr",
+        gridTemplateColumns: "2fr 1fr 1fr 1fr",
         borderBottom: `1px solid ${C.g1}`
       }
     }, /*#__PURE__*/React.createElement("div", {
@@ -1650,7 +1652,7 @@ function BISMatrix({
         }
       }));
     }));
-  }));
+  })));
 }
 
 // ── MAIN APP ──
@@ -1663,7 +1665,7 @@ function App() {
   const [q, setQ] = useState("");
   const [showRefs, setShowRefs] = useState(false);
   const [wide, setWide] = useState(window.innerWidth >= 580);
-  useEffect(() => {
+  React.useEffect(() => {
     const h = () => setWide(window.innerWidth >= 580);
     window.addEventListener("resize", h);
     return () => window.removeEventListener("resize", h);
@@ -1740,13 +1742,14 @@ function App() {
     style: {
       background: "#CC6677",
       color: C.w,
-      fontSize: 9,
+      fontSize: 8,
       fontWeight: 700,
-      padding: "2px 6px",
-      borderRadius: 6,
-      letterSpacing: .5,
+      padding: "2px 5px",
+      borderRadius: 5,
+      letterSpacing: .3,
       verticalAlign: "super",
-      marginLeft: 3
+      marginLeft: 3,
+      whiteSpace: "nowrap"
     }
   }, "Big Five");
   const CompCard = ({
@@ -1776,10 +1779,11 @@ function App() {
     }), /*#__PURE__*/React.createElement("span", {
       style: {
         fontWeight: 700,
-        fontSize: 14,
+        fontSize: 13,
         color: C.g9,
         flex: 1,
-        minWidth: 100
+        minWidth: 0,
+        wordBreak: "break-word"
       }
     }, c[lang], c.bis && /*#__PURE__*/React.createElement(BISBadge, null), c.b5 && /*#__PURE__*/React.createElement(B5Badge, null), c.sub_en && /*#__PURE__*/React.createElement("div", {
       style: {
@@ -2760,7 +2764,7 @@ function App() {
       lineHeight: 2,
       animation: "fi .2s ease"
     }
-  }, ["American Psychological Association (2022). Resilience. https://www.apa.org/topics/resilience", "Bandura, A. (1997). Self-efficacy: The exercise of control. Freeman.", "Beierlein, C., Kovaleva, A., Kemper, C. J., & Rammstedt, B. (2014). Allgemeine Selbstwirksamkeit Kurzskala (ASKU). ZIS. https://doi.org/10.6102/zis35", "Bennett, G. K. (1994). Bennett Mechanical Comprehension Test (BMCT-II). The Psychological Corporation.", "Boix Mansilla, V., Miller, W. C., & Gardner, H. (2000). On disciplinary lenses and interdisciplinary work. In S. Wineburg & P. Grossman (Eds.), Interdisciplinary curriculum: Challenges to implementation (pp. 17\u201338). Teachers College Press.", "Breil, S. M., Forthmann, B., & Back, M. D. (2022). Measuring distinct social skills via multiple speed assessments. European Journal of Psychological Assessment, 38(3), 224\u2013236.", "Breil, S. M., Mielke, I., Ahrens, H., Geldmacher, T., Sensmeier, J., Marschall, B., & Back, M. D. (2022). Predicting actual social skill expression from personality and skill self-concepts. Journal of Intelligence, 10(3), Article 48.", "Cacioppo, J. T., & Petty, R. E. (1982). The need for cognition. Journal of Personality and Social Psychology, 42(1), 116\u2013131.", "Cook, D. A., & Artino, A. R. (2016). Motivation to learn: An overview of contemporary theories. Medical Education, 50(10), 997\u20131014.", "Council of Europe (2020). Common European Framework of Reference for Languages: Learning, teaching, assessment \u2013 Companion volume. Council of Europe Publishing. https://www.coe.int/en/web/common-european-framework-reference-languages", "Dahl, C., & Dlugosch, G. E. (2020). Selbstf\u00fcrsorge als Thema in Gesundheitsf\u00f6rderung und Pr\u00e4vention. In C. Dahl & G. E. Dlugosch, Besser leben! Pr\u00e4vention und Gesundheitsf\u00f6rderung, 15(1), 27\u201335. https://doi.org/10.1007/s11553-019-00735-2", "Davis, M. H. (1983). Measuring individual differences in empathy: Evidence for a multidimensional approach. Journal of Personality and Social Psychology, 44(1), 113\u2013126.", "Doll, E. S., Nie\u00dfen, D., Schmidt, I., Rammstedt, B., & Lechner, C. M. (2021). General self-efficacy short scale-3 (GSE-3). ZIS. https://doi.org/10.6102/zis294", "Eccles, J. S., & Wigfield, A. (2002). Motivational beliefs, values, and goals. Annual Review of Psychology, 53, 109\u2013132.", "Garmezy, N. (1974). The study of competence in children at risk for severe psychopathology. In E. J. Anthony & C. Koupernik (Eds.), The child in his family: Vol. 3. Children at psychiatric risk (pp. 77\u201397). Wiley.", "Gembris, H. (2018). Musikalische Entwicklung: das Erwachsenenalter. In A. C. Lehmann & R. Kopiez (Hrsg.), Handbuch Musikpsychologie (S. 236). Hogrefe.", "Holland, J. L. (1997). Making vocational choices: A theory of vocational personalities and work environments (3rd ed.). Psychological Assessment Resources.", "Honicke, T., & Broadbent, J. (2016). The influence of academic self-efficacy on academic performance. Educational Research Review, 17, 63\u201384.", "J\u00e4ger, A. O., S\u00fc\u00df, H.-M., & Beauducel, A. (1997). Berliner Intelligenzstruktur-Test (BIS-Test, Form 4). Hogrefe.", "Mammadov, S. (2022). Big Five personality traits and academic performance. Journal of Personality, 90, 222\u2013255.", "McCrae, R. R., & John, O. P. (1992). An introduction to the five-factor model. Journal of Personality, 60(2), 175\u2013215.", "Muchinsky, P. M. (2006). Psychology applied to work (8th ed.). Thomson Wadsworth.", "Nye, C. D., Su, R., Rounds, J., & Drasgow, F. (2012). Vocational interests and performance. Perspectives on Psychological Science, 7(4), 384\u2013403.", "Pintrich, P. R., Smith, D. A. F., Garcia, T., & McKeachie, W. J. (1991). A manual for the use of the motivated strategies for learning questionnaire (MSLQ). University of Michigan.", "Richardson, M., Abraham, C., & Bond, R. (2012). Psychological correlates of university students\u2019 academic performance. Psychological Bulletin, 138, 353\u2013387.", "Salas, E., Dickinson, T. L., Converse, S. A., & Tannenbaum, S. I. (1992). Toward an understanding of team performance and training. In R. W. Swezey & E. Salas (Eds.), Teams: Their training and performance. Ablex.", "Salas, E., Reyes, D. L., & McDaniel, S. H. (2018). The science of teamwork: Progress, reflections, and the road ahead. American Psychologist, 73(4), 593\u2013600.", "Sch\u00f6n, D. A. (1983). The reflective practitioner: How professionals think in action. Basic Books.", "Spelt, E. J. H., Biemans, H. J. A., Tobi, H., Luning, P. A., & Mulder, M. (2009). Teaching and learning in interdisciplinary higher education: A systematic review. Educational Psychology Review, 21(4), 365\u2013378. https://doi.org/10.1007/s10648-009-9113-z", "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review. Psychological Bulletin, 133(1), 65\u201394.", "S\u00fc\u00df, H.-M., & Beauducel, A. (2015). Modeling the construct validity of the Berlin Intelligence Structure Model. Estudos de Psicologia (Campinas), 32(1), 13\u201325.", "Talsma, K., Sch\u00fcz, B., Schwarzer, R., & Norris, K. (2018). I believe, therefore I achieve. Learning and Individual Differences, 61, 136\u2013150.", "UNESCO Institute for Statistics (2018). A global framework of reference on digital literacy skills for Indicator 4.4.2 (Information Paper No. 51). UNESCO.", "Von der Embse, N., Jester, D., Roy, D., & Post, J. (2018). Test anxiety effects, predictors, and correlates: A 30-year meta-analytic review. Journal of Affective Disorders, 227, 483\u2013493.", "Vuorikari, R., Kluzer, S., & Punie, Y. (2022). DigComp 2.2: The Digital Competence Framework for Citizens. Publications Office of the European Union.", "Weinert, F. E. (2001). Vergleichende Leistungsmessung in Schulen \u2013 eine umstrittene Selbstverst\u00e4ndlichkeit. In F. E. Weinert (Hrsg.), Leistungsmessungen in Schulen (S. 17\u201331). Beltz. [Definition Kompetenz: S. 27f.]", "Wolf, A., & Loepthien, T. (2013/aktualisiert). Musikalit\u00e4t. In M. A. Wirtz (Hrsg.), Dorsch \u2013 Lexikon der Psychologie. Hogrefe.", "Zeidner, M. (1998). Test anxiety: The state of the art. Plenum Press. https://doi.org/10.1007/b109548"].map((r, i) => /*#__PURE__*/React.createElement("div", {
+  }, ["American Psychological Association (2022). Resilience. https://www.apa.org/topics/resilience", "Bandura, A. (1997). Self-efficacy: The exercise of control. Freeman.", "Beierlein, C., Kovaleva, A., Kemper, C. J., & Rammstedt, B. (2014). Allgemeine Selbstwirksamkeit Kurzskala (ASKU). ZIS. https://doi.org/10.6102/zis35", "Bennett, G. K. (1994). Bennett Mechanical Comprehension Test (BMCT-II). The Psychological Corporation.", "Boix Mansilla, V., Miller, W. C., & Gardner, H. (2000). On disciplinary lenses and interdisciplinary work. In S. Wineburg & P. Grossman (Eds.), Interdisciplinary curriculum: Challenges to implementation (pp. 17\u201338). Teachers College Press.", "Breil, S. M., Forthmann, B., & Back, M. D. (2022). Measuring distinct social skills via multiple speed assessments. European Journal of Psychological Assessment, 38(3), 224\u2013236. https://doi.org/10.1027/1015-5759/a000679", "Breil, S. M., Mielke, I., Ahrens, H., Geldmacher, T., Sensmeier, J., Marschall, B., & Back, M. D. (2022). Predicting actual social skill expression from personality and skill self-concepts. Journal of Intelligence, 10(3), Article 48. https://doi.org/10.3390/jintelligence10030048 https://doi.org/10.3390/jintelligence10030048 https://doi.org/10.3390/jintelligence10030048", "Cacioppo, J. T., & Petty, R. E. (1982). The need for cognition. Journal of Personality and Social Psychology, 42(1), 116\u2013131. https://doi.org/10.1037/0022-3514.42.1.116", "Cook, D. A., & Artino, A. R. (2016). Motivation to learn: An overview of contemporary theories. Medical Education, 50(10), 997\u20131014. https://doi.org/10.1111/medu.13074", "Council of Europe (2020). Common European Framework of Reference for Languages: Learning, teaching, assessment \u2013 Companion volume. Council of Europe Publishing. https://www.coe.int/en/web/common-european-framework-reference-languages", "Dahl, C., & Dlugosch, G. E. (2020). Selbstf\u00fcrsorge als Thema in Gesundheitsf\u00f6rderung und Pr\u00e4vention. In C. Dahl & G. E. Dlugosch, Besser leben! Pr\u00e4vention und Gesundheitsf\u00f6rderung, 15(1), 27\u201335. https://doi.org/10.1007/s11553-019-00735-2", "Davis, M. H. (1983). Measuring individual differences in empathy: Evidence for a multidimensional approach. Journal of Personality and Social Psychology, 44(1), 113\u2013126. https://doi.org/10.1037/0022-3514.44.1.113", "Doll, E. S., Nie\u00dfen, D., Schmidt, I., Rammstedt, B., & Lechner, C. M. (2021). General self-efficacy short scale-3 (GSE-3). ZIS. https://doi.org/10.6102/zis294", "Eccles, J. S., & Wigfield, A. (2002). Motivational beliefs, values, and goals. Annual Review of Psychology, 53, 109\u2013132. https://doi.org/10.1146/annurev.psych.53.100901.135153", "Garmezy, N. (1974). The study of competence in children at risk for severe psychopathology. In E. J. Anthony & C. Koupernik (Eds.), The child in his family: Vol. 3. Children at psychiatric risk (pp. 77\u201397). Wiley.", "Gembris, H. (2018). Musikalische Entwicklung: das Erwachsenenalter. In A. C. Lehmann & R. Kopiez (Hrsg.), Handbuch Musikpsychologie (S. 236). Hogrefe.", "Holland, J. L. (1997). Making vocational choices: A theory of vocational personalities and work environments (3rd ed.). Psychological Assessment Resources.", "Honicke, T., & Broadbent, J. (2016). The influence of academic self-efficacy on academic performance. Educational Research Review, 17, 63\u201384. https://doi.org/10.1016/j.edurev.2015.11.002", "J\u00e4ger, A. O., S\u00fc\u00df, H.-M., & Beauducel, A. (1997). Berliner Intelligenzstruktur-Test (BIS-Test, Form 4). Hogrefe.", "Mammadov, S. (2022). Big Five personality traits and academic performance. Journal of Personality, 90, 222\u2013255. https://doi.org/10.1111/jopy.12663", "McCrae, R. R., & John, O. P. (1992). An introduction to the five-factor model. Journal of Personality, 60(2), 175\u2013215. https://doi.org/10.1111/j.1467-6494.1992.tb00970.x", "Muchinsky, P. M. (2006). Psychology applied to work (8th ed.). Thomson Wadsworth.", "Nye, C. D., Su, R., Rounds, J., & Drasgow, F. (2012). Vocational interests and performance. Perspectives on Psychological Science, 7(4), 384\u2013403. https://doi.org/10.1177/1745691612449021", "Pintrich, P. R., Smith, D. A. F., Garcia, T., & McKeachie, W. J. (1991). A manual for the use of the motivated strategies for learning questionnaire (MSLQ). University of Michigan.", "Richardson, M., Abraham, C., & Bond, R. (2012). Psychological correlates of university students\u2019 academic performance. Psychological Bulletin, 138, 353\u2013387. https://doi.org/10.1037/a0026838", "Salas, E., Dickinson, T. L., Converse, S. A., & Tannenbaum, S. I. (1992). Toward an understanding of team performance and training. In R. W. Swezey & E. Salas (Eds.), Teams: Their training and performance. Ablex.", "Salas, E., Reyes, D. L., & McDaniel, S. H. (2018). The science of teamwork: Progress, reflections, and the road ahead. American Psychologist, 73(4), 593\u2013600. https://doi.org/10.1037/amp0000334", "Sch\u00f6n, D. A. (1983). The reflective practitioner: How professionals think in action. Basic Books.", "Spelt, E. J. H., Biemans, H. J. A., Tobi, H., Luning, P. A., & Mulder, M. (2009). Teaching and learning in interdisciplinary higher education: A systematic review. Educational Psychology Review, 21(4), 365\u2013378. https://doi.org/10.1007/s10648-009-9113-z", "Steel, P. (2007). The nature of procrastination: A meta-analytic and theoretical review. Psychological Bulletin, 133(1), 65\u201394. https://doi.org/10.1037/0033-2909.133.1.65", "S\u00fc\u00df, H.-M., & Beauducel, A. (2015). Modeling the construct validity of the Berlin Intelligence Structure Model. Estudos de Psicologia (Campinas), 32(1), 13\u201325. https://doi.org/10.1590/0103-166X2015000100002", "Talsma, K., Sch\u00fcz, B., Schwarzer, R., & Norris, K. (2018). I believe, therefore I achieve. Learning and Individual Differences, 61, 136\u2013150. https://doi.org/10.1016/j.lindif.2017.11.017", "UNESCO Institute for Statistics (2018). A global framework of reference on digital literacy skills for Indicator 4.4.2 (Information Paper No. 51). UNESCO.", "Von der Embse, N., Jester, D., Roy, D., & Post, J. (2018). Test anxiety effects, predictors, and correlates: A 30-year meta-analytic review. Journal of Affective Disorders, 227, 483\u2013493. https://doi.org/10.1016/j.jad.2017.11.048", "Vuorikari, R., Kluzer, S., & Punie, Y. (2022). DigComp 2.2: The Digital Competence Framework for Citizens. Publications Office of the European Union.", "Weinert, F. E. (2001). Vergleichende Leistungsmessung in Schulen \u2013 eine umstrittene Selbstverst\u00e4ndlichkeit. In F. E. Weinert (Hrsg.), Leistungsmessungen in Schulen (S. 17\u201331). Beltz. [Definition Kompetenz: S. 27f.]", "Wolf, A., & Loepthien, T. (2013/aktualisiert). Musikalit\u00e4t. In M. A. Wirtz (Hrsg.), Dorsch \u2013 Lexikon der Psychologie. Hogrefe.", "Zeidner, M. (1998). Test anxiety: The state of the art. Plenum Press. https://doi.org/10.1007/b109548"].map((r, i) => /*#__PURE__*/React.createElement("div", {
     key: i,
     style: {
       paddingLeft: 24,
@@ -2814,7 +2818,6 @@ function App() {
     }
   }, t("Visual design created with AI assistance", "Visuelle Gestaltung mit KI-Unterstützung erstellt")))));
 }
-ReactDOM.createRoot(document.getElementById("root")).render(/*#__PURE__*/React.createElement(App, null));
 
 
 ReactDOM.createRoot(document.getElementById("root")).render(React.createElement(App));
