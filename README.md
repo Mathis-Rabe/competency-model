@@ -1,2 +1,2 @@
 # competency-model
-Interactive companion to: Rabe, M., Buitkamp, L. F., &amp; Persike, M. (in preparation). Towards a comprehensive model of university undergraduate students' competencies. Explore the three-tier competency model, program-specific profiles, and RIASEC interest patterns across 34 Bachelor programs.
+Rabe, M., Buitkamp, L. F., & Persike, M. (2026). Towards a comprehensive model of university undergraduate students' competencies: A mixed-methods analysis of core skills for academic success [Poster]. 21. Jahrestagung der Gesellschaft für Hochschulforschung, Paderborn, Germany
