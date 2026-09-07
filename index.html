@@ -32,7 +32,7 @@ const C = {
   g9: "#2D2D2D",
   g7: "#646464",
   g5: "#9C9C9C",
-  g3: "#CFD1D2",
+  g3: "#E3E8EF",
   g1: "#ECEDED",
   g0: "#F6F6F6",
   w: "#FFF"
@@ -102,1156 +102,1114 @@ const CN = {
   }
 };
 const PROGS = [{
-  en: "Applied Geography",
-  de: "Angewandte Geographie",
-  deg: "B.Sc.",
-  cl: 1,
-  code: "ICS",
-  R: 2.24,
-  I: 3.80,
-  A: 1.47,
-  S: 2.64,
-  E: 2.06,
-  C: 2.69
-}, {
-  en: "Applied Geosciences",
-  de: "Angewandte Geowissenschaften",
-  deg: "B.Sc.",
-  cl: 1,
-  code: "ICR",
-  R: 2.64,
-  I: 3.79,
-  A: 1.39,
-  S: 2.39,
-  E: 1.68,
-  C: 2.93
-}, {
-  en: "Architecture",
-  de: "Architektur",
-  deg: "B.Sc.",
-  cl: 2,
-  code: "RCS",
-  R: 4.18,
-  I: 2.70,
-  A: 2.96,
-  S: 3.39,
-  E: 2.31,
-  C: 3.45
-}, {
-  en: "Biology",
-  de: "Biologie",
-  deg: "B.Sc.",
-  cl: 3,
-  code: "ICR",
-  R: 2.89,
-  I: 4.27,
-  A: 1.36,
-  S: 2.47,
-  E: 1.50,
-  C: 3.58
-}, {
-  en: "Business Administration",
-  de: "Betriebswirtschaftslehre",
-  deg: "B.Sc.",
-  cl: 5,
-  code: "ECI",
-  R: 2.46,
-  I: 3.17,
-  A: 1.76,
-  S: 2.59,
-  E: 3.70,
-  C: 3.67
-}, {
-  en: "Business Admin. and Eng.: Civil Eng.",
-  de: "Wirtschaftsingenieurwesen Bau",
-  deg: "B.Sc.",
-  cl: 4,
-  code: "CRE",
-  R: 3.56,
-  I: 3.13,
-  A: 1.35,
-  S: 2.45,
-  E: 3.14,
-  C: 3.96
-}, {
-  en: "Business Admin. and Eng.: Electrical Power Eng.",
-  de: "Wirtschaftsingenieurwesen Elektro",
-  deg: "B.Sc.",
-  cl: 5,
-  code: "CEI",
-  R: 2.99,
-  I: 3.02,
-  A: 1.52,
-  S: 2.09,
-  E: 3.16,
-  C: 3.41
-}, {
-  en: "Business Admin. and Eng.: Materials and Process Eng.",
-  de: "Wirtschaftsingenieurwesen Werkstofftechnik",
-  deg: "B.Sc.",
-  cl: 6,
-  code: "IEC",
-  R: 3.53,
-  I: 3.75,
-  A: 1.78,
-  S: 2.30,
-  E: 3.67,
-  C: 3.59
-}, {
-  en: "Business Admin. and Eng.: Mechanical Eng.",
-  de: "Wirtschaftsingenieurwesen Maschinenbau",
-  deg: "B.Sc.",
-  cl: 4,
-  code: "RCE",
-  R: 3.68,
-  I: 3.12,
-  A: 1.40,
-  S: 2.10,
-  E: 3.29,
-  C: 3.58
-}, {
-  en: "Chemistry (Plus)",
-  de: "Chemie (Plus)",
-  deg: "B.Sc.",
-  cl: 3,
-  code: "ICR",
-  R: 3.09,
-  I: 4.48,
-  A: 1.08,
-  S: 2.24,
-  E: 1.33,
-  C: 3.84
-}, {
-  en: "Civil Engineering",
-  de: "Bauingenieurwesen",
-  deg: "B.Sc.",
-  cl: 4,
-  code: "CRI",
-  R: 3.55,
-  I: 3.12,
-  A: 1.38,
-  S: 2.62,
-  E: 2.08,
-  C: 4.07
-}, {
-  en: "Computational Engineering Science",
-  de: "Computational Engineering Science",
-  deg: "B.Sc.",
-  cl: 7,
-  code: "IRC",
-  R: 3.43,
-  I: 3.59,
-  A: 1.45,
-  S: 2.47,
-  E: 1.85,
-  C: 3.08
-}, {
-  en: "Computer Engineering",
-  de: "Computer Engineering",
-  deg: "B.Sc.",
-  cl: 4,
-  code: "CIR",
-  R: 3.11,
-  I: 3.29,
-  A: 1.60,
-  S: 2.83,
-  E: 2.03,
-  C: 3.48
-}, {
-  en: "Computer Science",
-  de: "Informatik",
-  deg: "B.Sc.",
-  cl: 7,
-  code: "ICR",
-  R: 2.51,
-  I: 3.38,
-  A: 1.23,
-  S: 2.04,
-  E: 1.63,
-  C: 3.34
-}, {
-  en: "Electrical Engineering and Information Technology",
-  de: "Elektrotechnik und Informationstechnik",
-  deg: "B.Sc.",
-  cl: 4,
-  code: "ICR",
-  R: 3.24,
-  I: 3.49,
-  A: 1.55,
-  S: 2.50,
-  E: 1.98,
-  C: 3.28
-}, {
-  en: "Environmental Engineering",
-  de: "Umweltingenieurwissenschaften",
-  deg: "B.Sc.",
-  cl: 4,
-  code: "ICR",
-  R: 3.43,
-  I: 3.64,
-  A: 1.38,
-  S: 2.83,
-  E: 1.93,
-  C: 3.64
-}, {
-  en: "Georesource Management",
-  de: "Georessourcenmanagement",
-  deg: "B.Sc.",
-  cl: 6,
-  code: "IRC",
-  R: 3.75,
-  I: 4.10,
-  A: 1.45,
-  S: 2.73,
-  E: 1.80,
-  C: 3.20
-}, {
-  en: "Linguistics and Communication Science",
-  de: "Sprach- und Kommunikationswissenschaft",
-  deg: "B.A.",
-  cl: 8,
-  code: "SIC",
-  R: 2.00,
-  I: 3.67,
-  A: 2.31,
-  S: 3.74,
-  E: 1.94,
-  C: 2.81
-}, {
-  en: "Logopedics",
-  de: "Logopädie",
-  deg: "B.Sc.",
-  cl: 8,
-  code: "SIC",
-  R: 1.85,
-  I: 3.37,
-  A: 2.08,
-  S: 4.79,
-  E: 1.26,
-  C: 3.03
-}, {
-  en: "Management Science and Mathematics",
-  de: "Wirtschaftsmathematik",
-  deg: "B.Sc.",
-  cl: 5,
-  code: "CIE",
-  R: 2.78,
-  I: 3.50,
-  A: 1.58,
-  S: 2.37,
-  E: 3.47,
-  C: 3.59
-}, {
-  en: "Materials Science",
-  de: "Materialwissenschaften",
-  deg: "B.Sc.",
-  cl: 1,
-  code: "IRC",
-  R: 3.33,
-  I: 3.72,
-  A: 1.09,
-  S: 1.96,
-  E: 1.44,
-  C: 3.21
-}, {
-  en: "Mathematics",
-  de: "Mathematik",
-  deg: "B.Sc.",
-  cl: 7,
-  code: "ICS",
-  R: 2.08,
-  I: 3.19,
-  A: 1.22,
-  S: 2.56,
-  E: 1.73,
-  C: 3.10
-}, {
-  en: "Mechanical Engineering",
-  de: "Maschinenbau",
-  deg: "B.Sc.",
-  cl: 4,
-  code: "RCI",
-  R: 3.63,
-  I: 3.41,
-  A: 1.33,
-  S: 2.24,
-  E: 2.15,
-  C: 3.43
-}, {
-  en: "Molecular and Applied Biotechnology",
-  de: "Molekulare und Angewandte Biotechnologie",
-  deg: "B.Sc.",
-  cl: 3,
-  code: "ICR",
-  R: 3.10,
-  I: 4.30,
-  A: 1.24,
-  S: 2.61,
-  E: 2.05,
-  C: 3.68
-}, {
-  en: "Philosophy, Literary Studies and Linguistics",
-  de: "Philosophie, Literatur- und Sprachwissenschaft",
-  deg: "B.A.",
-  cl: 9,
-  code: "AIC",
-  R: 1.62,
-  I: 3.50,
-  A: 3.72,
-  S: 2.58,
-  E: 1.30,
-  C: 2.75
-}, {
-  en: "Physics (Plus)",
-  de: "Physik (Plus)",
-  deg: "B.Sc.",
-  cl: 7,
-  code: "ICR",
-  R: 2.60,
-  I: 4.10,
-  A: 1.02,
-  S: 1.93,
-  E: 1.20,
-  C: 2.66
-}, {
-  en: "Primary School Teacher",
-  de: "Grundschullehramt",
-  deg: "B.Ed.",
-  cl: 10,
-  code: "SIC",
-  R: 2.75,
-  I: 3.39,
-  A: 2.47,
-  S: 4.81,
-  E: 1.89,
-  C: 3.15
-}, {
-  en: "Psychology",
-  de: "Psychologie",
-  deg: "B.Sc.",
-  cl: 8,
-  code: "ISC",
-  R: 1.73,
-  I: 4.23,
-  A: 1.39,
-  S: 4.05,
-  E: 1.39,
-  C: 2.96
-}, {
-  en: "Social Sciences",
-  de: "Gesellschaftswissenschaften",
-  deg: "B.A.",
-  cl: 9,
-  code: "ISC",
-  R: 1.88,
-  I: 3.71,
-  A: 2.63,
-  S: 3.28,
-  E: 2.02,
-  C: 2.94
-}, {
-  en: "Sociology (Technology Studies)",
-  de: "Soziologie mit Schwerpunkt Technikforschung",
-  deg: "B.A.",
-  cl: 9,
-  code: "ISC",
-  R: 2.00,
-  I: 4.28,
-  A: 1.58,
-  S: 2.75,
-  E: 1.91,
-  C: 2.52
-}, {
-  en: "Sustainable Energy Supply",
-  de: "Nachhaltige Rohstoff- und Energieversorgung",
-  deg: "B.Sc.",
-  cl: 4,
-  code: "RIC",
-  R: 3.45,
-  I: 3.39,
-  A: 1.25,
-  S: 2.65,
-  E: 2.27,
-  C: 3.33
-}, {
-  en: "Sustainable Materials Engineering",
-  de: "Nachhaltige Werkstofftechnik",
-  deg: "B.Sc.",
-  cl: 1,
-  code: "IRC",
-  R: 3.79,
-  I: 4.08,
-  A: 1.75,
-  S: 2.50,
-  E: 2.62,
-  C: 3.17
-}, {
-  en: "Teaching",
-  de: "Lehramt",
-  deg: "B.A./B.Sc.",
-  cl: 10,
-  code: "SIC",
-  R: 2.39,
-  I: 3.26,
-  A: 2.51,
-  S: 4.39,
-  E: 1.49,
-  C: 3.20
-}, {
-  en: "Transport Engineering and Mobility",
-  de: "Verkehrsingenieurwesen und Mobilität",
-  deg: "B.Sc.",
-  cl: 4,
-  code: "CIR",
-  R: 3.04,
-  I: 3.27,
-  A: 1.23,
-  S: 2.41,
-  E: 2.44,
-  C: 3.69
-}];
+    en: "Applied Geography",
+    de: "Angewandte Geographie",
+    deg: "B.Sc.",
+    cl: 1,
+    code: "ICS",
+    R: 2.24,
+    I: 3.8,
+    A: 1.47,
+    S: 2.64,
+    E: 2.06,
+    C: 2.69
+  }, {
+    en: "Applied Geosciences",
+    de: "Angewandte Geowissenschaften",
+    deg: "B.Sc.",
+    cl: 1,
+    code: "ICR",
+    R: 2.64,
+    I: 3.79,
+    A: 1.39,
+    S: 2.39,
+    E: 1.68,
+    C: 2.93
+  }, {
+    en: "Architecture",
+    de: "Architektur",
+    deg: "B.Sc.",
+    cl: 2,
+    code: "RCS",
+    R: 4.18,
+    I: 2.7,
+    A: 2.96,
+    S: 3.39,
+    E: 2.31,
+    C: 3.45
+  }, {
+    en: "BAE: Civil Engineering",
+    de: "Wirtschaftsingenieurwesen Bau",
+    deg: "B.Sc.",
+    cl: 4,
+    code: "CRE",
+    R: 3.56,
+    I: 3.13,
+    A: 1.35,
+    S: 2.45,
+    E: 3.14,
+    C: 3.96
+  }, {
+    en: "BAE: Electrical Power Engineering",
+    de: "Wirtschaftsingenieurwesen Elektrische Energietechnik",
+    deg: "B.Sc.",
+    cl: 5,
+    code: "CEI",
+    R: 2.99,
+    I: 3.02,
+    A: 1.52,
+    S: 2.09,
+    E: 3.16,
+    C: 3.41
+  }, {
+    en: "BAE: Materials and Process Engineering",
+    de: "Wirtschaftsingenieurwesen Werkstoff- und Verfahrenstechnik",
+    deg: "B.Sc.",
+    cl: 6,
+    code: "IEC",
+    R: 3.53,
+    I: 3.75,
+    A: 1.78,
+    S: 2.3,
+    E: 3.67,
+    C: 3.59
+  }, {
+    en: "BAE: Mechanical Engineering",
+    de: "Wirtschaftsingenieurwesen Maschinenbau",
+    deg: "B.Sc.",
+    cl: 4,
+    code: "RCE",
+    R: 3.68,
+    I: 3.12,
+    A: 1.4,
+    S: 2.1,
+    E: 3.29,
+    C: 3.58
+  }, {
+    en: "Biology",
+    de: "Biologie",
+    deg: "B.Sc.",
+    cl: 3,
+    code: "ICR",
+    R: 2.89,
+    I: 4.27,
+    A: 1.36,
+    S: 2.47,
+    E: 1.5,
+    C: 3.58
+  }, {
+    en: "Business Administration",
+    de: "Betriebswirtschaftslehre",
+    deg: "B.Sc.",
+    cl: 5,
+    code: "ECI",
+    R: 2.46,
+    I: 3.17,
+    A: 1.76,
+    S: 2.59,
+    E: 3.7,
+    C: 3.67
+  }, {
+    en: "Chemistry",
+    de: "Chemie",
+    deg: "B.Sc.",
+    cl: 3,
+    code: "ICR",
+    R: 3.09,
+    I: 4.48,
+    A: 1.08,
+    S: 2.24,
+    E: 1.33,
+    C: 3.84
+  }, {
+    en: "Civil Engineering",
+    de: "Bauingenieurwesen",
+    deg: "B.Sc.",
+    cl: 4,
+    code: "CRI",
+    R: 3.55,
+    I: 3.12,
+    A: 1.38,
+    S: 2.62,
+    E: 2.08,
+    C: 4.07
+  }, {
+    en: "Computational Engineering Science",
+    de: "Computational Engineering Science",
+    deg: "B.Sc.",
+    cl: 7,
+    code: "IRC",
+    R: 3.43,
+    I: 3.59,
+    A: 1.45,
+    S: 2.47,
+    E: 1.85,
+    C: 3.08
+  }, {
+    en: "Computer Engineering",
+    de: "Computer Engineering",
+    deg: "B.Sc.",
+    cl: 4,
+    code: "CIR",
+    R: 3.11,
+    I: 3.29,
+    A: 1.6,
+    S: 2.83,
+    E: 2.03,
+    C: 3.48
+  }, {
+    en: "Computer Science",
+    de: "Informatik",
+    deg: "B.Sc.",
+    cl: 7,
+    code: "ICR",
+    R: 2.51,
+    I: 3.38,
+    A: 1.23,
+    S: 2.04,
+    E: 1.63,
+    C: 3.34
+  }, {
+    en: "Electrical Engineering and Information Technology",
+    de: "Elektrotechnik und Informationstechnik",
+    deg: "B.Sc.",
+    cl: 4,
+    code: "ICR",
+    R: 3.24,
+    I: 3.49,
+    A: 1.55,
+    S: 2.5,
+    E: 1.98,
+    C: 3.28
+  }, {
+    en: "Environmental Engineering",
+    de: "Umweltingenieurwissenschaften",
+    deg: "B.Sc.",
+    cl: 4,
+    code: "CIR",
+    R: 3.43,
+    I: 3.64,
+    A: 1.38,
+    S: 2.83,
+    E: 1.93,
+    C: 3.64
+  }, {
+    en: "Georesource Management",
+    de: "Georessourcenmanagement",
+    deg: "B.Sc.",
+    cl: 6,
+    code: "IRC",
+    R: 3.75,
+    I: 4.1,
+    A: 1.45,
+    S: 2.73,
+    E: 1.8,
+    C: 3.2
+  }, {
+    en: "Linguistics and Communication Science",
+    de: "Sprach- und Kommunikationswissenschaft",
+    deg: "B.A.",
+    cl: 8,
+    code: "SIC",
+    R: 2.0,
+    I: 3.67,
+    A: 2.31,
+    S: 3.74,
+    E: 1.94,
+    C: 2.81
+  }, {
+    en: "Logopedics",
+    de: "Logopädie",
+    deg: "B.Sc.",
+    cl: 8,
+    code: "SIC",
+    R: 1.85,
+    I: 3.37,
+    A: 2.08,
+    S: 4.79,
+    E: 1.26,
+    C: 3.03
+  }, {
+    en: "Management Science and Mathematics",
+    de: "Wirtschaftsmathematik",
+    deg: "B.Sc.",
+    cl: 5,
+    code: "CIE",
+    R: 2.78,
+    I: 3.5,
+    A: 1.58,
+    S: 2.37,
+    E: 3.47,
+    C: 3.59
+  }, {
+    en: "Materials Science",
+    de: "Materialwissenschaften",
+    deg: "B.Sc.",
+    cl: 1,
+    code: "IRC",
+    R: 3.33,
+    I: 3.72,
+    A: 1.09,
+    S: 1.96,
+    E: 1.44,
+    C: 3.21
+  }, {
+    en: "Mathematics",
+    de: "Mathematik",
+    deg: "B.Sc.",
+    cl: 7,
+    code: "ICS",
+    R: 2.08,
+    I: 3.19,
+    A: 1.22,
+    S: 2.56,
+    E: 1.73,
+    C: 3.1
+  }, {
+    en: "Mechanical Engineering",
+    de: "Maschinenbau",
+    deg: "B.Sc.",
+    cl: 4,
+    code: "RCI",
+    R: 3.63,
+    I: 3.41,
+    A: 1.33,
+    S: 2.24,
+    E: 2.15,
+    C: 3.43
+  }, {
+    en: "Molecular and Applied Biotechnology",
+    de: "Molekulare und Angewandte Biotechnologie",
+    deg: "B.Sc.",
+    cl: 3,
+    code: "ICR",
+    R: 3.1,
+    I: 4.3,
+    A: 1.24,
+    S: 2.61,
+    E: 2.05,
+    C: 3.68
+  }, {
+    en: "Philosophy, Literary Studies and Linguistics",
+    de: "Philosophie, Literatur- und Sprachwissenschaft",
+    deg: "B.A.",
+    cl: 9,
+    code: "AIC",
+    R: 1.62,
+    I: 3.5,
+    A: 3.72,
+    S: 2.58,
+    E: 1.3,
+    C: 2.75
+  }, {
+    en: "Physics",
+    de: "Physik",
+    deg: "B.Sc.",
+    cl: 7,
+    code: "ICR",
+    R: 2.6,
+    I: 4.1,
+    A: 1.02,
+    S: 1.93,
+    E: 1.2,
+    C: 2.66
+  }, {
+    en: "Primary School Education",
+    de: "Grundschullehramt",
+    deg: "B.Ed.",
+    cl: 10,
+    code: "SIC",
+    R: 2.75,
+    I: 3.39,
+    A: 2.47,
+    S: 4.81,
+    E: 1.89,
+    C: 3.15
+  }, {
+    en: "Psychology",
+    de: "Psychologie",
+    deg: "B.Sc.",
+    cl: 8,
+    code: "ISC",
+    R: 1.73,
+    I: 4.23,
+    A: 1.39,
+    S: 4.05,
+    E: 1.39,
+    C: 2.96
+  }, {
+    en: "Social Sciences",
+    de: "Gesellschaftswissenschaften",
+    deg: "B.A.",
+    cl: 9,
+    code: "ISC",
+    R: 1.88,
+    I: 3.71,
+    A: 2.63,
+    S: 3.28,
+    E: 2.02,
+    C: 2.94
+  }, {
+    en: "Sociology with a Specialization on Technology Studies",
+    de: "Soziologie mit Schwerpunkt Technikforschung",
+    deg: "B.A.",
+    cl: 9,
+    code: "ISC",
+    R: 2.0,
+    I: 4.28,
+    A: 1.58,
+    S: 2.75,
+    E: 1.91,
+    C: 2.52
+  }, {
+    en: "Sustainable Materials Engineering",
+    de: "Nachhaltige Werkstofftechnik",
+    deg: "B.Sc.",
+    cl: 1,
+    code: "IRC",
+    R: 3.79,
+    I: 4.08,
+    A: 1.75,
+    S: 2.5,
+    E: 2.62,
+    C: 3.17
+  }, {
+    en: "Sustainable Resources and Energy Supply",
+    de: "Nachhaltige Rohstoff- und Energieversorgung",
+    deg: "B.Sc.",
+    cl: 4,
+    code: "RIC",
+    R: 3.45,
+    I: 3.39,
+    A: 1.25,
+    S: 2.65,
+    E: 2.27,
+    C: 3.33
+  }, {
+    en: "Teaching",
+    de: "Lehramt",
+    deg: "B.A./B.Sc.",
+    cl: 10,
+    code: "SIC",
+    R: 2.39,
+    I: 3.26,
+    A: 2.51,
+    S: 4.39,
+    E: 1.49,
+    C: 3.2
+  }, {
+    en: "Transport Engineering and Mobility",
+    de: "Verkehrsingenieurwesen und Mobilität",
+    deg: "B.Sc.",
+    cl: 4,
+    code: "CIR",
+    R: 3.04,
+    I: 3.27,
+    A: 1.23,
+    S: 2.41,
+    E: 2.44,
+    C: 3.69
+  }];
 
-// BIS Operations
 const BIS_OPS = [{
-  id: "pc",
-  en: "Processing Capacity",
-  de: "Verarbeitungskapazität",
-  icon: "K",
-  core: true,
-  desc_en: "Corresponds to reasoning (fluid intelligence): processing complex information that requires drawing upon diverse information, establishing relationships, formally logical thinking, and evaluating information (Jäger et al., 1997).",
-  desc_de: "Entspricht dem schlussfolgernden Denken (fluide Intelligenz): Verarbeitung komplexer Informationen, die vielfältiges Beziehungsstiften, formallogisch exaktes Denken und sachgerechtes Beurteilen erfordern (Jäger et al., 1997)."
-}, {
-  id: "cr",
-  en: "Creativity",
-  de: "Einfallsreichtum",
-  icon: "E",
-  desc_en: "Close to fluency and flexibility (divergent thinking): flexible idea production presupposing diverse information and richness of imagination. Focus on problem-oriented solutions, not uncontrolled fantasy (Jäger et al., 1997).",
-  desc_de: "Nahe verwandt mit Flüssigkeit und Flexibilität (divergentes Denken): flexible Ideenproduktion, die vielfältige Informationen und Vorstellungsreichtum voraussetzt. Fokus auf problemorientierte Lösungen (Jäger et al., 1997)."
-}, {
-  id: "me",
-  en: "Memory",
-  de: "Merkfähigkeit",
-  icon: "G",
-  desc_en: "Active encoding and short-term recognition or reproduction of diverse material. Encompasses retaining information in working memory and retrieving it later (Jäger et al., 1997).",
-  desc_de: "Aktives Einprägen und kurzfristiges Wiedererkennen oder Reproduzieren verschiedenartigen Materials. Informationen im Arbeitsgedächtnis behalten und später abrufen (Jäger et al., 1997)."
-}, {
-  id: "ps",
-  en: "Processing Speed",
-  de: "Bearbeitungsgeschwindigkeit",
-  icon: "B",
-  desc_en: "Speed of work, ease of comprehension, and concentration when solving simply structured tasks. Captures quick and accurate performance on simple cognitive tasks (mental speed) (Jäger et al., 1997).",
-  desc_de: "Arbeitstempo, Auffassungsleichtigkeit und Konzentration beim Lösen einfach strukturierter Aufgaben. Erfasst schnelle und genaue Leistung bei einfachen kognitiven Aufgaben (Jäger et al., 1997)."
-}];
+    id: "pc",
+    en: "Processing Capacity",
+    de: "Verarbeitungskapazität",
+    icon: "K",
+    core: true,
+    desc_en: "Cognitive capacity for complex reasoning and abstract problem solving (Jäger et al., 1997).",
+    desc_de: "Kognitive Kapazität für komplexes Schlussfolgern und abstraktes Problemlösen (Jäger et al., 1997)."
+  }, {
+    id: "cr",
+    en: "Creativity",
+    de: "Kreativität",
+    icon: "E",
+    desc_en: "Capacity to generate novel and useful ideas with flexible thinking (Jäger et al., 1997).",
+    desc_de: "Fähigkeit, neuartige und brauchbare Ideen mit flexiblem Denken hervorzubringen (Jäger et al., 1997)."
+  }, {
+    id: "me",
+    en: "Memory",
+    de: "Merkfähigkeit",
+    icon: "G",
+    desc_en: "Capacity to encode, store, and recall information (Jäger et al., 1997).",
+    desc_de: "Fähigkeit, Informationen einzuprägen, zu speichern und abzurufen (Jäger et al., 1997)."
+  }, {
+    id: "ps",
+    en: "Processing Speed",
+    de: "Bearbeitungsgeschwindigkeit",
+    icon: "B",
+    desc_en: "Cognitive speed of information processing in mental operations (Jäger et al., 1997).",
+    desc_de: "Kognitive Geschwindigkeit der Informationsverarbeitung bei mentalen Operationen (Jäger et al., 1997)."
+  }];
 // BIS Contents
 const BIS_CONT = [{
-  id: "ve",
-  en: "Verbal",
-  de: "Verbal",
-  icon: "Tt",
-  desc_en: "Language-bound thinking: degree of acquisition and availability of the relational system of language (Jäger et al., 1997)",
-  desc_de: "Sprachgebundenes Denken: Grad der Aneignung und Verfügbarkeit des Beziehungssystems Sprache (Jäger et al., 1997)"
-}, {
-  id: "nu",
-  en: "Numerical",
-  de: "Numerisch",
-  icon: "#",
-  desc_en: "Number-bound thinking: degree of acquisition and availability of the relational system of numbers (Jäger et al., 1997)",
-  desc_de: "Zahlengebundenes Denken: Grad der Aneignung und Verfügbarkeit des Beziehungssystems Zahlen (Jäger et al., 1997)"
-}, {
-  id: "fi",
-  en: "Figural",
-  de: "Figural",
-  icon: "◇",
-  desc_en: "Figural-pictorial thinking: processing requiring figural-pictorial and/or spatial imagination (Jäger et al., 1997)",
-  desc_de: "Anschauungsgebundenes Denken: Bearbeitung, die figural-bildhaftes und/oder räumliches Vorstellen erfordert (Jäger et al., 1997)"
-}];
+    id: "ve",
+    en: "Verbal",
+    de: "Verbal",
+    icon: "Tt",
+    desc_en: "Cognitive ability to process and reason with verbal information (Jäger et al., 1997).",
+    desc_de: "Kognitive Fähigkeit, verbale Informationen zu verarbeiten und mit ihnen zu schlussfolgern (Jäger et al., 1997)."
+  }, {
+    id: "nu",
+    en: "Numerical",
+    de: "Numerisch",
+    icon: "#",
+    desc_en: "Cognitive ability to process and reason with numerical information (Jäger et al., 1997).",
+    desc_de: "Kognitive Fähigkeit, numerische Informationen zu verarbeiten und mit ihnen zu schlussfolgern (Jäger et al., 1997)."
+  }, {
+    id: "fi",
+    en: "Figural",
+    de: "Figural",
+    icon: "\\u25c7",
+    desc_en: "Cognitive ability to process and reason with figural and spatial information (Jäger et al., 1997).",
+    desc_de: "Kognitive Fähigkeit, figurale und räumliche Informationen zu verarbeiten und mit ihnen zu schlussfolgern (Jäger et al., 1997)."
+  }];
 
 // Additional cognitive (non-BIS)
 const EXTRA_COG = [{
-  id: "sk",
-  en: "Scientific Understanding",
-  de: "Naturwissenschaftliches Verständnis",
-  def_en: "Foundational knowledge and understanding of concepts, principles, and phenomena in the natural sciences. Provides the disciplinary basis for engaging with scientific content, explaining phenomena, and building further domain-specific expertise (OECD, 2016).",
-  def_de: "Grundlegendes Wissen und Verständnis von Konzepten, Prinzipien und Phänomenen der Naturwissenschaften. Bildet die fachliche Basis, um sich mit wissenschaftlichen Inhalten auseinanderzusetzen, Phänomene zu erklären und weitere fachspezifische Expertise aufzubauen (OECD, 2016)."
-}, {
-  id: "ss",
-  en: "Scientific Skills",
-  de: "Wissenschaftliche Arbeitstechniken",
-  def_en: "Methods of scientific inquiry, reasoning, and argumentation, including explaining phenomena scientifically, evaluating and designing investigations, and interpreting data and evidence. Shared across disciplines as systematic, evidence-based reasoning (Fischer et al., 2014).",
-  def_de: "Methoden wissenschaftlicher Erkenntnisgewinnung, des Schlussfolgerns und des Argumentierens, einschließlich Phänomene wissenschaftlich zu erklären, Untersuchungen zu bewerten und zu planen sowie Daten und Evidenz zu interpretieren. Disziplinübergreifend als systematisches, evidenzbasiertes Schlussfolgern (Fischer et al., 2014)."
-}, {
-  id: "tm",
-  en: "Technical-Mechanical Skills",
-  de: "Technisch-mechanische Fähigkeiten",
-  def_en: "Capacity to infer the properties of and relations between components in a technical or mechanical system from given information. Involves understanding physical forces and mechanical principles such as levers, gears, motion, and force (Hartweg, 2010).",
-  def_de: "Fähigkeit, aus gegebenen Informationen die Eigenschaften von und Beziehungen zwischen Komponenten in einem technischen oder mechanischen System abzuleiten. Umfasst das Verständnis physikalischer Kräfte und mechanischer Prinzipien wie Hebel, Zahnräder, Bewegung und Kraft (Hartweg, 2010)."
-}, {
-  id: "ep",
-  en: "English Proficiency",
-  de: "Englischkenntnisse",
-  def_en: "Ability to use English across the four core skills: listening, reading, writing, and speaking. Essential for understanding English-language literature, participating in international academic discourse, and producing scientific texts. Proficiency levels defined by the CEFR from A1 to C2 (Council of Europe, 2020).",
-  def_de: "Fähigkeit, Englisch in den vier Kernfertigkeiten Hören, Lesen, Schreiben und Sprechen einzusetzen. Unerlässlich für englischsprachige Fachliteratur, internationale akademische Kommunikation und wissenschaftliche Texte. Kompetenzstufen nach GER von A1 bis C2 (Europarat, 2020)."
-}, {
-  id: "dl",
-  en: "Digital Literacy",
-  de: "Digitale Kompetenz",
-  def_en: "Ability to access, manage, understand, evaluate, and create information through digital technologies. Involves confident, critical, and responsible use of digital technologies for learning, work, and societal participation. Includes information literacy, digital content creation, and problem-solving (Vuorikari et al., 2022).",
-  def_de: "Fähigkeit, Informationen über digitale Technologien zu finden, zu verwalten, zu verstehen, zu bewerten und zu erstellen. Umfasst selbstbewussten, kritischen und verantwortungsvollen Umgang mit digitalen Technologien zum Lernen, Arbeiten und zur gesellschaftlichen Teilhabe (Vuorikari et al., 2022)."
-}, {
-  id: "mu",
-  en: "Musicality",
-  de: "Musikalität",
-  def_en: "Capacity to perceive and discriminate musical elements such as melody, rhythm, tuning, and timbre. Ranges from basic perceptual abilities to highly expert musical performance (Zentner & Strauss, 2017).",
-  def_de: "Fähigkeit, musikalische Elemente wie Melodie, Rhythmus, Stimmung und Klangfarbe wahrzunehmen und zu unterscheiden. Reicht von basalen Wahrnehmungsfähigkeiten bis zu hochexpertisierten musikalischen Leistungen (Zentner & Strauss, 2017)."
-}, {
-  id: "pg",
-  en: "Programming",
-  de: "Programmierkenntnisse",
-  def_en: "Ability to design algorithms and implement them in programming languages to solve problems systematically. Encompasses understanding fundamental concepts (variables, control structures, data structures), translating logical processes into executable code, debugging, and testing. Increasingly relevant across disciplines for data analysis, simulation, and automation (Weintrop et al., 2016).",
-  def_de: "Fähigkeit, Algorithmen zu entwerfen und in Programmiersprachen umzusetzen, um Probleme systematisch zu lösen. Umfasst grundlegende Konzepte (Variablen, Kontrollstrukturen, Datenstrukturen), Übersetzen logischer Prozesse in ausführbaren Code, Debugging und Testen. Zunehmend relevant in vielen Disziplinen für Datenanalyse, Simulation und Automatisierung (Weintrop et al., 2016)."
-}, {
-  id: "pr",
-  en: "Presentation Skills",
-  de: "Präsentationsfähigkeiten",
-  def_en: "Capacity to communicate one's thoughts and present arguments effectively to an audience. Encompasses planning and organizing content, clear verbal delivery, effective use of visual aids, confident body language, responding to questions, and managing stage fright (Soto et al., 2022).",
-  def_de: "Fähigkeit, eigene Gedanken zu kommunizieren und Argumente wirksam vor einem Publikum darzustellen. Umfasst Planung und Gliederung von Inhalten, klare verbale Vermittlung, effektiven Einsatz visueller Hilfsmittel, selbstsicheres Auftreten, das Eingehen auf Fragen und den Umgang mit Lampenfieber (Soto et al., 2022)."
-}];
+    id: "sk",
+    en: "Scientific Understanding",
+    de: "Naturwissenschaftliches Verständnis",
+    def_en: "Foundational knowledge of the natural sciences (OECD, 2016).",
+    def_de: "Grundlegendes Wissen der Naturwissenschaften (OECD, 2016)."
+  }, {
+    id: "ss",
+    en: "Scientific Skills",
+    de: "Wissenschaftliche Arbeitstechniken",
+    def_en: "Methods of scientific inquiry, reasoning, and evidence evaluation (Fischer et al., 2014).",
+    def_de: "Methoden wissenschaftlicher Erkenntnisgewinnung, des Schlussfolgerns und der Bewertung von Evidenz (Fischer et al., 2014)."
+  }, {
+    id: "tm",
+    en: "Technical-Mechanical Skills",
+    de: "Technisch-mechanisches Verständnis",
+    def_en: "Capacity to infer properties of and relations between components in a technical system from given information (Hartweg, 2010).",
+    def_de: "Fähigkeit, aus gegebenen Informationen Eigenschaften von und Beziehungen zwischen Komponenten eines technischen Systems zu erschließen (Hartweg, 2010)."
+  }, {
+    id: "ep",
+    en: "English Proficiency",
+    de: "Englischkenntnisse",
+    def_en: "Command of English across listening, reading, writing, and speaking (Council of Europe, 2020).",
+    def_de: "Beherrschung des Englischen in Hören, Lesen, Schreiben und Sprechen (Europarat, 2020)."
+  }, {
+    id: "mu",
+    en: "Musicality",
+    de: "Musikalität",
+    def_en: "Capacity to perceive and discriminate musical elements such as melody, rhythm, tuning, and timbre (Zentner & Strauß, 2017).",
+    def_de: "Fähigkeit, musikalische Elemente wie Melodie, Rhythmus, Stimmung und Klangfarbe wahrzunehmen und zu unterscheiden (Zentner & Strauß, 2017)."
+  }, {
+    id: "pg",
+    en: "Programming",
+    de: "Programmierkenntnisse",
+    def_en: "Ability to solve problems by developing and testing code (Weintrop et al., 2016).",
+    def_de: "Fähigkeit, Probleme durch das Entwickeln und Testen von Code zu lösen (Weintrop et al., 2016)."
+  }, {
+    id: "pr",
+    en: "Presentation Skills",
+    de: "Präsentationsfähigkeiten",
+    def_en: "Capacity to communicate one's thoughts and present arguments effectively (Soto et al., 2022).",
+    def_de: "Fähigkeit, eigene Gedanken zu kommunizieren und Argumente wirksam darzustellen (Soto et al., 2022)."
+  }, {
+    id: "isk",
+    en: "Information Seeking",
+    de: "Informationssuche",
+    def_en: "Ability to obtain additional information when there are gaps in knowledge or difficulties in understanding (Wild & Schiefele, 1994).",
+    def_de: "Fähigkeit, zusätzliche Informationen zu beschaffen, wenn Wissenslücken oder Verständnisschwierigkeiten bestehen (Wild & Schiefele, 1994)."
+  }];
 
 // Non-cognitive competencies
 const NONCOG = [{
-  id: "se",
-  en: "Self-Efficacy",
-  de: "Selbstwirksamkeit",
-  def_en: "Confidence in one's ability to master academic challenges. Encompasses judgments about task-specific capabilities and the belief that educational goals can be achieved. Enhances performance through higher goal-setting, greater effort, and persistence in the face of adversity (Bandura, 1997).",
-  def_de: "Überzeugung, akademische Herausforderungen bewältigen zu können. Umfasst Einschätzungen der eigenen aufgabenspezifischen Fähigkeiten und den Glauben, Bildungsziele erreichen zu können. Fördert Leistung durch höhere Zielsetzung, größere Anstrengung und Ausdauer bei Rückschlägen (Bandura, 1997).",
-  tier: 1
-}, {
-  id: "sm",
-  en: "Self-Management",
-  de: "Selbstmanagement",
-  sub_en: "(incl. Low Procrastination)",
-  sub_de: "(inkl. Geringe Prokrastination)",
-  def_en: "Capacity to set goals, plan, organize, and manage one's time and resources to complete academic work in a timely manner. Combines self-management as a social-emotional skill with low procrastination, resisting the tendency to voluntarily delay intended tasks (Soto et al., 2022).",
-  def_de: "Fähigkeit, Ziele zu setzen, zu planen, zu organisieren und die eigene Zeit und Ressourcen so zu steuern, dass akademische Aufgaben rechtzeitig erledigt werden. Verbindet Selbstmanagement als sozial-emotionale Fertigkeit mit geringer Prokrastination, also dem Widerstand gegen das freiwillige Aufschieben beabsichtigter Aufgaben (Soto et al., 2022).",
-  tier: 1
-}, {
-  id: "co",
-  en: "Conscientiousness",
-  de: "Gewissenhaftigkeit",
-  def_en: "Big Five personality dimension describing the tendency to be self-disciplined, organized, achievement-oriented, and dependable. Associated with greater motivation to perform well and higher persistence when faced with difficult tasks (Mammadov, 2022).",
-  def_de: "Big-Five-Persönlichkeitsdimension, die die Tendenz zu Selbstdisziplin, Organisation, Leistungsorientierung und Verlässlichkeit beschreibt. Verbunden mit höherer Leistungsmotivation und größerer Ausdauer bei schwierigen Aufgaben (Mammadov, 2022).",
-  tier: 1
-}, {
-  id: "er",
-  en: "Effort Regulation",
-  de: "Anstrengungsregulation",
-  def_en: "Ability to control effort and attention in the face of distractions and uninteresting tasks. Reflects persistence in challenging academic situations and commitment to completing study goals. Regulates the continued use of learning strategies (Pintrich et al., 1991).",
-  def_de: "Fähigkeit, Anstrengung und Aufmerksamkeit auch bei Ablenkungen und uninteressanten Aufgaben aufrechtzuerhalten. Spiegelt Ausdauer in herausfordernden akademischen Situationen und die Bereitschaft wider, Studienziele weiterzuverfolgen (Pintrich et al., 1991).",
-  tier: 1
-}, {
-  id: "mo",
-  en: "Motivation",
-  de: "Motivation",
-  def_en: "Self-motivation for and enjoyment of academic learning and tasks. Drives the initiation and persistence of goal-directed study behavior through expectancy beliefs, values, and goal orientations (Richardson et al., 2012).",
-  def_de: "Selbstmotivation für und Freude an akademischem Lernen und akademischen Aufgaben. Treibt die Initiierung und Aufrechterhaltung zielgerichteten Studierverhaltens über Erwartungsüberzeugungen, Werte und Zielorientierungen an (Richardson et al., 2012).",
-  tier: 2
-}, {
-  id: "re",
-  en: "Resilience",
-  de: "Resilienz",
-  def_en: "Ability to bounce back and recover from stress, adapting to difficult or challenging experiences through mental, emotional, and behavioral flexibility (Smith et al., 2008).",
-  def_de: "Fähigkeit, sich von Stress zu erholen und nach Belastungen wieder ins Gleichgewicht zu kommen, indem man sich durch mentale, emotionale und verhaltensbezogene Flexibilität an schwierige Erfahrungen anpasst (Smith et al., 2008).",
-  tier: 2
-}, {
-  id: "cn",
-  en: "Concentration",
-  de: "Konzentration",
-  def_en: "Capacity to remain attentive and task-focused during academic tasks. Encompasses sustaining attention over extended periods, resisting distractions, and maintaining cognitive engagement with the material at hand (Richardson et al., 2012).",
-  def_de: "Fähigkeit, bei akademischen Aufgaben aufmerksam und fokussiert zu bleiben. Umfasst das Aufrechterhalten der Aufmerksamkeit über längere Zeiträume, das Widerstehen von Ablenkungen und die kognitive Beschäftigung mit dem vorliegenden Material (Richardson et al., 2012).",
-  tier: 2
-}, {
-  id: "es",
-  en: "Emotional Stability",
-  de: "Emotionale Stabilität",
-  def_en: "Positive pole of the Big Five dimension Neuroticism. Characterized by low anxiety, emotional balance, ability to delay gratification, and reduced vulnerability to stressors. Associated with remaining calm under pressure and lower test anxiety (Mammadov, 2022).",
-  def_de: "Positiver Pol der Big-Five-Dimension Neurotizismus. Gekennzeichnet durch geringe Ängstlichkeit, emotionale Ausgeglichenheit, Fähigkeit zur Bedürfnisaufschiebung und geringere Anfälligkeit gegenüber Stressoren. Verbunden mit Ruhe unter Druck und geringerer Prüfungsangst (Mammadov, 2022).",
-  tier: 1
-}, {
-  id: "idd",
-  en: "Interdisciplinary Thinking",
-  de: "Interdisziplinäres Denken",
-  def_en: "Capacity to integrate knowledge and modes of thinking from two or more disciplines to produce cognitive advancement — explaining phenomena, solving problems, or creating products in ways impossible through single-disciplinary means (Boix Mansilla et al., 2000).",
-  def_de: "Fähigkeit, Wissen und Denkweisen aus zwei oder mehr Disziplinen zu integrieren, um kognitive Fortschritte zu erzielen — Phänomene zu erklären, Probleme zu lösen oder Produkte zu schaffen auf eine durch rein disziplinäre Mittel unmögliche Weise (Boix Mansilla et al., 2000).",
-  tier: 2
-}, {
-  id: "nc",
-  en: "Need for Cognition",
-  de: "Kognitionsbedürfnis",
-  def_en: "Tendency to engage in and enjoy effortful thinking. Individuals high in need for cognition are intrinsically motivated to engage in complex cognitive processing. Positively associated with fluid intelligence, openness, and goal orientation (Cacioppo & Petty, 1982).",
-  def_de: "Tendenz, sich gerne mit anspruchsvollem Denken zu beschäftigen. Personen mit hohem Kognitionsbedürfnis sind intrinsisch motiviert für komplexe kognitive Verarbeitung. Positiv assoziiert mit fluider Intelligenz, Offenheit und Zielorientierung (Cacioppo & Petty, 1982).",
-  tier: 2
-}, {
-  id: "sc",
-  en: "Social Skills",
-  de: "Sozialkompetenz",
-  def_en: "Range of skills promoting effective functioning in interpersonal situations. Encompasses three dimensions: Agency Skill (assertive, self-confident behavior), Communion Skill (warm, compassionate behavior), and Interpersonal Resilience (calm, emotionally balanced behavior) (Breil et al., 2022).",
-  def_de: "Spektrum an Fertigkeiten für effektives Handeln in zwischenmenschlichen Situationen. Umfasst drei Dimensionen: Agency Skill (durchsetzungsstarkes Verhalten), Communion Skill (warmherziges Verhalten) und Interpersonelle Resilienz (gelassenes, emotional ausgeglichenes Verhalten) (Breil et al., 2022).",
-  tier: 2
-}, {
-  id: "lt",
-  en: "Low Test Anxiety",
-  de: "Geringe Prüfungsangst",
-  def_en: "Absence of debilitating worry and physiological arousal in testing situations. Low test anxiety means these reactions do not disrupt performance, supporting focused work under evaluation (Pintrich et al., 1991).",
-  def_de: "Fehlen beeinträchtigender Sorge und physiologischer Erregung in Prüfungssituationen. Geringe Prüfungsangst bedeutet, dass diese Reaktionen die Leistung nicht stören und fokussiertes Arbeiten unter Bewertung ermöglichen (Pintrich et al., 1991).",
-  tier: 2
-}, {
-  id: "sf",
-  en: "Demand and Recovery Regulation",
-  de: "Belastungs- und Erholungsregulation",
-  def_en: "The ability to deliberately manage study-related demands by restoring personal resources through breaks and balance, protecting them by setting boundaries, and mobilizing them by seeking help (Sonnentag & Fritz, 2007; Hobfoll, 1989).",
-  def_de: "Die Fähigkeit, studienbezogene Beanspruchung bewusst zu steuern, indem persönliche Ressourcen durch Pausen und Ausgleich wiederhergestellt, durch Grenzen geschützt und durch Hilfesuche mobilisiert werden (Sonnentag & Fritz, 2007; Hobfoll, 1989).",
-  tier: 2
-}, {
-  id: "lc",
-  en: "Learning Skills",
-  de: "Lernkompetenz",
-  def_en: "Use of cognitive, metacognitive, and resource-based strategies to regulate one's own learning. Includes planning, monitoring, and adjusting the learning process, and making effective use of internal and external learning resources (Wild & Schiefele, 1994).",
-  def_de: "Einsatz kognitiver, metakognitiver und ressourcenbezogener Strategien zur Regulation des eigenen Lernens. Umfasst das Planen, Überwachen und Anpassen des Lernprozesses sowie die effektive Nutzung interner und externer Lernressourcen (Wild & Schiefele, 1994).",
-  tier: 2
-}, {
-  id: "op",
-  en: "Openness",
-  de: "Offenheit",
-  def_en: "Big Five personality dimension characterized by intellectual curiosity, imagination, and openness to new experiences. Students high in openness are more willing to consider new ideas and better able to manage new learning essential to academic achievement (Mammadov, 2022).",
-  def_de: "Big-Five-Persönlichkeitsdimension, gekennzeichnet durch intellektuelle Neugier, Phantasiereichtum und Aufgeschlossenheit gegenüber neuen Erfahrungen. Studierende mit hoher Offenheit sind eher bereit, neue Ideen zu erwägen und neues Lernmaterial besser zu verarbeiten (Mammadov, 2022).",
-  tier: 2
-}, {
-  id: "ag",
-  en: "Agreeableness",
-  de: "Verträglichkeit",
-  def_en: "Big Five personality dimension characterized by being trusting, empathetic, and cooperative. Agreeable individuals show greater cooperation with instructors and peers, facilitating the learning process, and attend classes more consistently (Mammadov, 2022).",
-  def_de: "Big-Five-Persönlichkeitsdimension, gekennzeichnet durch Vertrauenswürdigkeit, Empathie und Kooperationsbereitschaft. Verträgliche Personen zeigen mehr Kooperation mit Lehrenden und Mitstudierenden, was den Lernprozess fördert (Mammadov, 2022).",
-  tier: 2
-}, {
-  id: "tw",
-  en: "Teamwork",
-  de: "Teamarbeit",
-  def_en: "Capacity to work effectively with others to achieve shared goals. Involves coordinating efforts, communicating openly, building mutual trust, and contributing reliably within a team (Soto et al., 2022).",
-  def_de: "Fähigkeit, mit anderen wirksam zusammenzuarbeiten, um gemeinsame Ziele zu erreichen. Umfasst das Koordinieren von Beiträgen, offene Kommunikation, den Aufbau gegenseitigen Vertrauens und verlässliches Mitwirken im Team (Soto et al., 2022).",
-  tier: 2
-}, {
-  id: "ra",
-  en: "Reflective Ability",
-  de: "Reflexionsfähigkeit",
-  def_en: "Capacity to understand one's own thoughts, feelings, and behavior, and to analyze and question them for deeper self-knowledge and continued improvement (Soto et al., 2022).",
-  def_de: "Fähigkeit, das eigene Denken, Fühlen und Handeln zu verstehen sowie zu analysieren und zu hinterfragen, um tiefere Selbsterkenntnis und kontinuierliche Verbesserung zu erreichen (Soto et al., 2022).",
-  tier: 2
-}, {
-  id: "rc",
-  en: "Feedback Literacy",
-  de: "Feedbackkompetenz",
-  def_en: "Capacity to understand, interpret, and make use of feedback to improve one's own work and learning. Encompasses appreciating the value of feedback, making evaluative judgments, managing the emotions feedback can provoke, and taking action in response (Carless & Boud, 2018).",
-  def_de: "Fähigkeit, Feedback zu verstehen, zu interpretieren und zur Verbesserung der eigenen Arbeit und des eigenen Lernens zu nutzen. Umfasst die Wertschätzung von Feedback, das Treffen evaluativer Urteile, den Umgang mit den durch Feedback ausgelösten Emotionen und das Ableiten konkreter Handlungen (Carless & Boud, 2018).",
-  tier: 3
-}, {
-  id: "em",
-  en: "Empathy",
-  de: "Empathie",
-  def_en: "Capacity to perceive, understand, and share other people's thoughts and feelings, taking their perspective and responding with appropriate care and warmth (Soto et al., 2022).",
-  def_de: "Fähigkeit, die Gedanken und Gefühle anderer wahrzunehmen, zu verstehen und nachzuempfinden, ihre Perspektive einzunehmen und mit angemessener Anteilnahme und Wärme zu reagieren (Soto et al., 2022).",
-  tier: 3
-}, {
-  id: "ex",
-  en: "Extraversion",
-  de: "Extraversion",
-  def_en: "Big Five personality dimension characterized by assertiveness, sociability, and positive engagement in social interactions. In academic contexts, extraversion may be beneficial for collaborative work but can limit effort regulation through distraction by social activities (Mammadov, 2022).",
-  def_de: "Big-Five-Persönlichkeitsdimension, gekennzeichnet durch Durchsetzungsfähigkeit, Geselligkeit und positives Engagement in sozialen Interaktionen. Im akademischen Kontext kann Extraversion für kooperatives Arbeiten förderlich sein, aber durch Ablenkung durch soziale Aktivitäten die Anstrengungsregulation einschränken (Mammadov, 2022).",
-  tier: 3
-}];
+    id: "se",
+    en: "Self-Efficacy",
+    de: "Selbstwirksamkeit",
+    def_en: "Belief in one's general capability to master demands and challenges (Bandura, 1977).",
+    def_de: "Überzeugung, den eigenen Anforderungen und Herausforderungen grundsätzlich gewachsen zu sein (Bandura, 1977).",
+    tier: 1
+  }, {
+    id: "sm",
+    en: "Self-Management",
+    de: "Selbstmanagement",
+    sub_en: "(incl. Low Procrastination)",
+    sub_de: "(inkl. geringe Prokrastination)",
+    def_en: "Capacity to set goals, plan, organize, and complete one's studies in a timely manner (Soto et al., 2022).",
+    def_de: "Fähigkeit, Ziele zu setzen, zu planen, zu organisieren und das Studium termingerecht zu bewältigen (Soto et al., 2022).",
+    tier: 1
+  }, {
+    id: "co",
+    en: "Conscientiousness",
+    de: "Gewissenhaftigkeit",
+    def_en: "Tendency toward self-discipline, organization, and achievement orientation (Mammadov, 2022).",
+    def_de: "Neigung zu Selbstdisziplin, Organisation und Leistungsorientierung (Mammadov, 2022).",
+    tier: 1
+  }, {
+    id: "er",
+    en: "Effort Regulation",
+    de: "Anstrengungsregulation",
+    def_en: "Sustaining effort and attention despite difficulty, distraction, and uninteresting tasks (Pintrich et al., 1991).",
+    def_de: "Anstrengung und Aufmerksamkeit trotz Schwierigkeiten, Ablenkung und uninteressanter Aufgaben aufrechterhalten (Pintrich et al., 1991).",
+    tier: 1
+  }, {
+    id: "mo",
+    en: "Academic Motivation",
+    de: "Studienbezogene Motivation",
+    def_en: "Academic behavior energized by intrinsic interest, personal value, and internalized reasons (Howard et al., 2021).",
+    def_de: "Studienverhalten, das durch intrinsisches Interesse, persönlichen Wert und internalisierte Gründe angetrieben wird (Howard et al., 2021).",
+    tier: 2
+  }, {
+    id: "re",
+    en: "Resilience",
+    de: "Resilienz",
+    def_en: "Ability to bounce back and recover from stress (Smith et al., 2008).",
+    def_de: "Fähigkeit, sich nach Belastungen wieder zu erholen (Smith et al., 2008).",
+    tier: 2
+  }, {
+    id: "cn",
+    en: "Concentration",
+    de: "Konzentration",
+    def_en: "Capacity to remain attentive and task-focused during academic tasks (Richardson et al., 2012).",
+    def_de: "Fähigkeit, während akademischer Aufgaben aufmerksam und bei der Sache zu bleiben (Richardson et al., 2012).",
+    tier: 2
+  }, {
+    id: "es",
+    en: "Emotional Stability",
+    de: "Emotionale Stabilität",
+    def_en: "Low vulnerability to unpleasant emotions such as anxiety and stress (Mammadov, 2022).",
+    def_de: "Geringe Anfälligkeit für unangenehme Emotionen wie Angst und Stress (Mammadov, 2022).",
+    tier: 1
+  }, {
+    id: "idd",
+    en: "Interdisciplinary Thinking",
+    de: "Interdisziplinäres Denken",
+    def_en: "Capacity to integrate knowledge and modes of thinking across disciplines (Boix Mansilla et al., 2000).",
+    def_de: "Fähigkeit, Wissen und Denkweisen über Disziplingrenzen hinweg zu integrieren (Boix Mansilla et al., 2000).",
+    tier: 2
+  }, {
+    id: "nc",
+    en: "Need for Cognition",
+    de: "Kognitionsbedürfnis",
+    def_en: "General tendency to enjoy activities involving effortful cognition (Cacioppo & Petty, 1982).",
+    def_de: "Allgemeine Neigung, Tätigkeiten mit hohem Denkaufwand zu genießen (Cacioppo & Petty, 1982).",
+    tier: 2
+  }, {
+    id: "sc",
+    en: "Social Skills",
+    de: "Sozialkompetenz",
+    def_en: "Skills promoting effective functioning in interpersonal situations across agency, communion, and interpersonal calmness (Breil et al., 2022).",
+    def_de: "Fertigkeiten für wirksames Handeln in zwischenmenschlichen Situationen über Durchsetzung, Verbundenheit und interpersonelle Gelassenheit hinweg (Breil et al., 2022).",
+    tier: 2
+  }, {
+    id: "lt",
+    en: "Low Test Anxiety",
+    de: "Geringe Prüfungsangst",
+    def_en: "Absence of debilitating worry and arousal in testing situations (Pintrich et al., 1991).",
+    def_de: "Fehlen beeinträchtigender Sorge und Erregung in Prüfungssituationen (Pintrich et al., 1991).",
+    tier: 2
+  }, {
+    id: "sf",
+    en: "Stress-Sensitive Self-Care",
+    de: "Stresssensible Selbstfürsorge",
+    def_en: "Ability to perceive one's own needs, limits, and signs of strain and to derive appropriate protective and restorative actions (Cook-Cottone & Guyker, 2018).",
+    def_de: "Fähigkeit, eigene Bedürfnisse, Grenzen und Belastungssignale wahrzunehmen und daraus angemessene schützende und erholende Handlungen abzuleiten (Cook-Cottone & Guyker, 2018).",
+    tier: 2
+  }, {
+    id: "lc",
+    en: "Learning Skills",
+    de: "Lernkompetenz",
+    def_en: "Use of cognitive, resource-based, and metacognitive learning strategies to regulate one's own learning (Wild & Schiefele, 1994).",
+    def_de: "Einsatz kognitiver, ressourcenbezogener und metakognitiver Lernstrategien zur Regulation des eigenen Lernens (Wild & Schiefele, 1994).",
+    tier: 2
+  }, {
+    id: "op",
+    en: "Openness",
+    de: "Offenheit",
+    def_en: "Intellectual curiosity, creativity, and preference for novelty (Mammadov, 2022).",
+    def_de: "Intellektuelle Neugier, Kreativität und Vorliebe für Neues (Mammadov, 2022).",
+    tier: 2
+  }, {
+    id: "ag",
+    en: "Agreeableness",
+    de: "Verträglichkeit",
+    def_en: "Tendency toward prosocial, cooperative rather than antagonistic behavior (Mammadov, 2022).",
+    def_de: "Neigung zu prosozialem, kooperativem statt antagonistischem Verhalten (Mammadov, 2022).",
+    tier: 2
+  }, {
+    id: "tw",
+    en: "Teamwork",
+    de: "Teamarbeit",
+    def_en: "Capacity to work with others to achieve shared goals (Soto et al., 2022).",
+    def_de: "Fähigkeit, mit anderen zusammenzuarbeiten, um gemeinsame Ziele zu erreichen (Soto et al., 2022).",
+    tier: 2
+  }, {
+    id: "ra",
+    en: "Reflective Ability",
+    de: "Reflexionsfähigkeit",
+    def_en: "Capacity to understand one's own thoughts and feelings (Soto et al., 2022).",
+    def_de: "Fähigkeit, die eigenen Gedanken und Gefühle zu verstehen (Soto et al., 2022).",
+    tier: 2
+  }, {
+    id: "rc",
+    en: "Feedback Literacy",
+    de: "Feedbackkompetenz",
+    def_en: "Capacity to make sense of critical feedback, manage its emotional impact, and use it to improve one's work (Carless & Boud, 2018).",
+    def_de: "Fähigkeit, kritisches Feedback zu verstehen, seine emotionale Wirkung zu bewältigen und es zur Verbesserung der eigenen Arbeit zu nutzen (Carless & Boud, 2018).",
+    tier: 3
+  }, {
+    id: "em",
+    en: "Empathy",
+    de: "Empathie",
+    def_en: "Affective response similar to another's perceived or imagined emotion, not one's own (Cuff et al., 2016).",
+    def_de: "Affektive Reaktion, die der wahrgenommenen oder vorgestellten Emotion einer anderen Person ähnelt und nicht der eigenen (Cuff et al., 2016).",
+    tier: 3
+  }, {
+    id: "ex",
+    en: "Extraversion",
+    de: "Extraversion",
+    def_en: "Sociability, activity, and seeking stimulation in the company of others (Mammadov, 2022).",
+    def_de: "Geselligkeit, Aktivität und Suche nach Anregung in Gesellschaft anderer (Mammadov, 2022).",
+    tier: 3
+  }];
 
 // Per program: which BIS ops, BIS contents, extra cog, and noncog IDs are included
-// BIS: pc=always(T1), cr=always(T1). me, ps vary. ve, nu, fi vary.
-const PP = {
-  0: {
+// Source: Appendix A, Table A.1 of the manuscript
+const PP = {0: {
+    ops: ["pc", "cr", "me"],
+    con: ["ve"],
+    xc: ["sk", "ss", "pr"],
+    nc: ["lt", "idd", "sc", "nc", "ag", "op"]
+  }, 1: {
     ops: ["pc", "cr", "me"],
     con: ["ve", "nu", "fi"],
     xc: ["sk", "ss", "pr"],
-    nc: ["idd", "sc", "es", "nc", "lt", "sf", "op", "ag"]
-  },
-  1: {
-    ops: ["pc", "cr", "me"],
-    con: ["ve", "nu", "fi"],
-    xc: ["sk", "ss", "pr"],
-    nc: ["idd", "sc", "es", "nc", "nu", "lt", "op", "ag"]
-  },
-  2: {
+    nc: ["lt", "idd", "sc", "nc", "ag", "op"]
+  }, 2: {
     ops: ["pc", "cr", "me"],
     con: ["ve", "fi"],
-    xc: ["tm", "ss", "pr"],
-    nc: ["mo", "re", "sc", "ra", "tw", "es", "idd", "nc", "lt", "op", "ag", "rc", "ex"]
-  },
-  3: {
-    ops: ["pc", "cr", "me"],
-    con: ["ve", "nu"],
-    xc: ["sk", "ss", "ep"],
-    nc: ["mo", "re", "idd", "sc", "es", "nc", "lt", "sf", "op", "ag", "tw"]
-  },
-  4: {
-    ops: ["pc", "cr", "me"],
-    con: ["ve", "nu"],
-    xc: [],
-    nc: ["cn", "idd", "es", "nc", "lt", "op", "ag"]
-  },
-  5: {
+    xc: ["ss", "tm", "pr"],
+    nc: ["mo", "lt", "idd", "sc", "nc", "ag", "op", "ra", "tw", "rc", "ex"]
+  }, 3: {
     ops: ["pc", "cr", "me"],
     con: ["nu", "fi"],
     xc: [],
-    nc: ["cn", "es", "nc", "lt", "ag", "tw"]
-  },
-  6: {
+    nc: ["cn", "lt", "nc", "ag", "tw"]
+  }, 4: {
     ops: ["pc", "cr", "me"],
-    con: ["nu"],
+    con: ["ve", "nu"],
     xc: [],
-    nc: ["es", "nc", "lt", "op", "ag"]
-  },
-  7: {
+    nc: ["lt", "nc", "lc", "ag", "op", "ra"]
+  }, 5: {
     ops: ["pc", "cr", "me"],
-    con: ["nu", "fi"],
+    con: ["ve", "nu", "fi"],
     xc: [],
-    nc: ["es", "nc", "lt", "op", "ag"]
-  },
-  8: {
+    nc: ["lt", "nc", "ag", "op"]
+  }, 6: {
     ops: ["pc", "cr", "me", "ps"],
     con: ["nu", "fi"],
     xc: ["sk", "tm", "pg"],
-    nc: ["mo", "re", "cn", "idd", "es", "nc", "lt", "ag"]
-  },
-  9: {
+    nc: ["mo", "re", "cn", "lt", "idd", "nc", "ag"]
+  }, 7: {
     ops: ["pc", "cr", "me"],
     con: ["ve", "nu"],
+    xc: ["sk", "ss", "ep"],
+    nc: ["mo", "re", "lt", "idd", "sc", "sf", "nc", "ag", "op", "tw"]
+  }, 8: {
+    ops: ["pc", "cr", "me"],
+    con: ["ve", "nu"],
+    xc: [],
+    nc: ["cn", "lt", "idd", "nc", "ag", "op"]
+  }, 9: {
+    ops: ["pc", "cr", "me"],
+    con: ["ve", "nu", "fi"],
     xc: ["sk", "ss", "pg"],
-    nc: ["re", "ra", "es", "nc", "lt", "op", "ag"]
-  },
-  10: {
+    nc: ["re", "lt", "nc", "ag", "op", "ra"]
+  }, 10: {
     ops: ["pc", "cr", "me"],
     con: ["nu", "fi"],
     xc: [],
-    nc: ["es", "nc", "lt", "ag"]
-  },
-  11: {
-    ops: ["pc", "cr", "me"],
-    con: ["nu", "fi"],
+    nc: ["mo", "cn", "lt", "sc", "sf", "nc", "lc", "ag", "tw"]
+  }, 11: {
+    ops: ["pc", "cr"],
+    con: ["nu"],
     xc: ["ep", "pg"],
-    nc: ["re", "cn", "lc", "es", "nc", "lt", "op", "ag"]
-  },
-  12: {
+    nc: ["re", "cn", "lt", "sf", "nc", "lc", "ag", "op"]
+  }, 12: {
     ops: ["pc", "cr", "me"],
     con: ["ve", "nu", "fi"],
     xc: ["tm"],
-    nc: ["cn", "sf", "lc", "ra", "tw", "es", "nc", "lt", "op", "ag"]
-  },
-  13: {
-    ops: ["pc", "cr", "me"],
+    nc: ["cn", "lt", "sf", "nc", "lc", "ag", "op", "ra", "tw"]
+  }, 13: {
+    ops: ["pc", "cr"],
     con: ["ve", "nu"],
-    xc: ["dl"],
-    nc: ["mo", "re", "cn", "lc", "ra", "tw", "es", "nc", "lt", "op", "ag"]
-  },
-  14: {
+    xc: ["isk"],
+    nc: ["mo", "re", "cn", "lt", "nc", "lc", "ag", "op", "ra", "tw"]
+  }, 14: {
     ops: ["pc", "cr", "me", "ps"],
     con: ["nu", "fi"],
     xc: ["sk", "ep"],
-    nc: ["mo", "re", "cn", "sc", "sf", "es", "nc", "lt", "op", "ag"]
-  },
-  15: {
-    ops: ["pc", "cr", "me"],
-    con: ["nu", "fi"],
-    xc: ["sk", "tm"],
-    nc: ["re", "sf", "es", "nc", "lt", "op", "ag"]
-  },
-  16: {
+    nc: ["mo", "re", "cn", "lt", "sc", "sf", "nc", "ag", "op"]
+  }, 15: {
     ops: ["pc", "cr", "me"],
     con: ["ve", "nu", "fi"],
-    xc: [],
-    nc: ["es", "nc", "lt", "ag"]
-  },
-  17: {
+    xc: ["sk", "tm"],
+    nc: ["re", "lt", "sf", "nc", "ag", "op"]
+  }, 16: {
+    ops: ["pc", "cr", "me"],
+    con: ["ve", "nu", "fi"],
+    xc: ["ss"],
+    nc: ["lt", "nc", "ag", "op"]
+  }, 17: {
     ops: ["pc", "cr"],
     con: ["ve"],
     xc: [],
-    nc: ["es", "nc", "lt", "op", "ag", "ex"]
-  },
-  18: {
-    ops: ["pc", "cr", "me"],
+    nc: ["lt", "nc", "ag", "op", "ex"]
+  }, 18: {
+    ops: ["pc", "cr"],
     con: ["ve"],
-    xc: ["ep", "ss", "mu"],
-    nc: ["re", "sc", "sf", "es", "nc", "lt", "op", "ag", "rc", "em"]
-  },
-  19: {
+    xc: ["ss", "ep", "mu"],
+    nc: ["re", "lt", "sc", "sf", "nc", "ag", "op", "rc", "em"]
+  }, 19: {
     ops: ["pc", "cr", "me"],
     con: ["ve", "nu"],
     xc: [],
-    nc: ["es", "nc", "lt", "op", "ag"]
-  },
-  20: {
+    nc: ["lt", "nc", "ag", "op"]
+  }, 20: {
     ops: ["pc", "cr", "me"],
     con: ["nu", "fi"],
     xc: [],
-    nc: ["mo", "re", "idd", "tw", "es", "nc", "lt", "op", "ag"]
-  },
-  21: {
+    nc: ["mo", "re", "lt", "idd", "nc", "ag", "op", "tw"]
+  }, 21: {
     ops: ["pc", "cr", "me"],
-    con: ["ve", "nu"],
+    con: ["ve", "nu", "fi"],
     xc: [],
-    nc: ["mo", "re", "sf", "tw", "es", "nc", "lt", "op", "ag"]
-  },
-  22: {
+    nc: ["mo", "re", "lt", "sf", "nc", "ag", "op", "tw"]
+  }, 22: {
     ops: ["pc", "cr", "me", "ps"],
     con: ["nu", "fi"],
     xc: ["sk", "tm"],
-    nc: ["mo", "re", "cn", "lc", "es", "nc", "lt", "op", "ag"]
-  },
-  23: {
+    nc: ["mo", "re", "cn", "lt", "nc", "lc", "ag", "op"]
+  }, 23: {
     ops: ["pc", "cr", "me"],
-    con: ["nu", "fi"],
+    con: ["ve", "nu"],
     xc: [],
-    nc: ["es", "nc", "lt", "op", "ag"]
-  },
-  24: {
+    nc: ["lt", "nc", "ag", "op"]
+  }, 24: {
     ops: ["pc", "cr"],
     con: ["ve"],
-    xc: [],
-    nc: ["es", "nc", "lt", "op", "ag"]
-  },
-  25: {
+    xc: ["ss"],
+    nc: ["lt", "nc", "ag", "op"]
+  }, 25: {
     ops: ["pc", "cr"],
     con: ["nu", "fi"],
     xc: [],
-    nc: ["mo", "cn", "sf", "es", "nc", "lt", "op", "ag"]
-  },
-  26: {
+    nc: ["mo", "cn", "lt", "sf", "nc", "ag", "op"]
+  }, 26: {
     ops: ["pc", "cr", "me"],
     con: ["ve", "nu", "fi"],
     xc: ["ss"],
-    nc: ["mo", "re", "sc", "sf", "lc", "ra", "tw", "es", "nc", "lt", "op", "ag", "em"]
-  },
-  27: {
+    nc: ["mo", "re", "lt", "sc", "sf", "nc", "lc", "ag", "op", "ra", "tw", "em"]
+  }, 27: {
+    ops: ["pc", "cr"],
+    con: ["ve", "nu"],
+    xc: ["ss"],
+    nc: ["lt", "nc", "ag", "op"]
+  }, 28: {
+    ops: ["pc", "cr"],
+    con: ["ve"],
+    xc: [],
+    nc: ["mo", "lt", "sc", "sf", "nc", "ag", "op", "ex"]
+  }, 29: {
     ops: ["pc", "cr"],
     con: ["ve", "nu"],
     xc: [],
-    nc: ["es", "nc", "lt", "op", "ag"]
-  },
-  28: {
-    ops: ["pc", "cr"],
-    con: ["ve"],
-    xc: [],
-    nc: ["mo", "sc", "sf", "es", "nc", "lt", "op", "ag", "ex"]
-  },
-  29: {
-    ops: ["pc", "cr"],
-    con: ["ve"],
-    xc: [],
-    nc: ["mo", "sc", "sf", "es", "nc", "lt", "op", "ag", "ex"]
-  },
-  30: {
+    nc: ["mo", "lt", "sc", "sf", "nc", "ag", "op", "ex"]
+  }, 30: {
     ops: ["pc", "cr", "me"],
     con: ["nu", "fi"],
     xc: [],
-    nc: ["es", "nc", "lt", "ag"]
-  },
-  31: {
+    nc: ["lt", "nc", "ag", "op"]
+  }, 31: {
     ops: ["pc", "cr", "me"],
     con: ["nu", "fi"],
     xc: [],
-    nc: ["es", "nc", "lt", "ag"]
-  },
-  32: {
+    nc: ["cn", "lt", "nc", "ag", "op"]
+  }, 32: {
     ops: ["pc", "cr", "me"],
     con: ["ve"],
     xc: ["ss"],
-    nc: ["mo", "re", "cn", "sc", "sf", "lc", "ra", "tw", "es", "nc", "lt", "op", "ag", "em"]
-  },
-  33: {
+    nc: ["mo", "re", "lt", "sc", "sf", "nc", "lc", "ag", "op", "ra", "tw", "em"]
+  }, 33: {
     ops: ["pc", "cr", "me"],
     con: ["nu", "fi"],
     xc: [],
-    nc: ["es", "nc", "lt", "ag"]
-  }
-};
+    nc: ["lt", "idd", "sf", "nc", "ag", "op"]
+  }};
 
 // Model-level competencies for overview tab — ordered to match poster
-const ALL_COMPS = [
-// Tier 1: Core — BIS first, then non-cognitive
-{
-  id: "pc",
-  en: "Processing Capacity",
-  de: "Verarbeitungskapazität",
-  t: 1,
-  bis: true,
-  def_en: "Processing of complex information in tasks requiring drawing upon diverse information, establishing multiple relationships, formal-logical thinking, and appropriate evaluation. Corresponds to reasoning / fluid intelligence (Jäger et al., 1997).",
-  def_de: "Verarbeitung komplexer Informationen bei Aufgaben, die vielfältiges Beziehungsstiften, formallogisch exaktes Denken und sachgerechtes Beurteilen erfordern. Entspricht dem schlussfolgernden Denken / fluide Intelligenz (Jäger et al., 1997)."
-}, {
-  id: "cr",
-  en: "Creativity",
-  de: "Einfallsreichtum",
-  t: 2,
-  bis: true,
-  def_en: "Flexible idea production presupposing the availability of diverse information and richness of imagination. Focus on problem-oriented solutions — seeing many different aspects, variants, and possibilities of objects and problems. Close to fluency and flexibility / divergent thinking (Jäger et al., 1997).",
-  def_de: "Flexible Ideenproduktion, die vielfältige Informationen und Vorstellungsreichtum voraussetzt. Fokus auf problemorientierte Lösungen — viele verschiedene Seiten, Varianten und Möglichkeiten erkennen. Nahe verwandt mit Flüssigkeit und Flexibilität / divergentes Denken (Jäger et al., 1997)."
-}, {
-  id: "se",
-  en: "Self-Efficacy",
-  de: "Selbstwirksamkeit",
-  t: 1,
-  def_en: "Confidence in one's ability to master academic challenges. Encompasses judgments about task-specific capabilities and the belief that educational goals can be achieved. Enhances performance through higher goal-setting, greater effort, and persistence in the face of adversity (Bandura, 1997).",
-  def_de: "Überzeugung, akademische Herausforderungen bewältigen zu können. Umfasst Einschätzungen der eigenen aufgabenspezifischen Fähigkeiten und den Glauben, Bildungsziele erreichen zu können. Fördert Leistung durch höhere Zielsetzung, größere Anstrengung und Ausdauer bei Rückschlägen (Bandura, 1997)."
-}, {
-  id: "sm",
-  en: "Self-Management",
-  de: "Selbstmanagement",
-  sub_en: "(incl. Low Procrastination)",
-  sub_de: "(inkl. Geringe Prokrastination)",
-  t: 1,
-  def_en: "Capacity to set goals, plan, organize, and manage one's time and resources to complete academic work in a timely manner. Combines self-management as a social-emotional skill with low procrastination, resisting the tendency to voluntarily delay intended tasks (Soto et al., 2022).",
-  def_de: "Fähigkeit, Ziele zu setzen, zu planen, zu organisieren und die eigene Zeit und Ressourcen so zu steuern, dass akademische Aufgaben rechtzeitig erledigt werden. Verbindet Selbstmanagement als sozial-emotionale Fertigkeit mit geringer Prokrastination, also dem Widerstand gegen das freiwillige Aufschieben beabsichtigter Aufgaben (Soto et al., 2022)."
-}, {
-  id: "er",
-  en: "Effort Regulation",
-  de: "Anstrengungsregulation",
-  t: 1,
-  def_en: "Ability to control effort and attention in the face of distractions and uninteresting tasks. Reflects persistence in challenging academic situations and commitment to completing study goals. Regulates the continued use of learning strategies (Pintrich et al., 1991).",
-  def_de: "Fähigkeit, Anstrengung und Aufmerksamkeit auch bei Ablenkungen und uninteressanten Aufgaben aufrechtzuerhalten. Spiegelt Ausdauer in herausfordernden akademischen Situationen und die Bereitschaft wider, Studienziele weiterzuverfolgen (Pintrich et al., 1991)."
-}, {
-  id: "co",
-  en: "Conscientiousness",
-  de: "Gewissenhaftigkeit",
-  t: 1,
-  b5: true,
-  def_en: "Big Five personality dimension describing the tendency to be self-disciplined, organized, achievement-oriented, and dependable. Associated with greater motivation to perform well and higher persistence when faced with difficult tasks (Mammadov, 2022).",
-  def_de: "Big-Five-Persönlichkeitsdimension, die die Tendenz zu Selbstdisziplin, Organisation, Leistungsorientierung und Verlässlichkeit beschreibt. Verbunden mit höherer Leistungsmotivation und größerer Ausdauer bei schwierigen Aufgaben (Mammadov, 2022)."
-},
-// Tier 2: Specialized — BIS first, then cognitive-adjacent, then non-cognitive/soft
-{
-  id: "me",
-  en: "Memory",
-  de: "Merkfähigkeit",
-  t: 2,
-  bis: true,
-  def_en: "Active encoding and short-term recognition or reproduction of diverse material. Encompasses the ability to retain information in working memory and retrieve it later (Jäger et al., 1997).",
-  def_de: "Aktives Einprägen und kurzfristiges Wiedererkennen oder Reproduzieren verschiedenartigen Materials. Umfasst die Fähigkeit, Informationen im Arbeitsgedächtnis zu behalten und später abzurufen (Jäger et al., 1997)."
-}, {
-  id: "nu",
-  en: "Numerical Abilities",
-  de: "Numerische Fähigkeiten",
-  t: 2,
-  bis: true,
-  def_en: "Number-bound thinking: the degree of acquisition and availability of the relational system of numbers. Captures how well individuals can operate within numerical frameworks, including mathematical operations, numerical reasoning, and quantitative problem-solving (Jäger et al., 1997).",
-  def_de: "Zahlengebundenes Denken: Grad der Aneignung und Verfügbarkeit des Beziehungssystems Zahlen. Erfasst, wie gut Personen innerhalb numerischer Bezugssysteme agieren — mathematische Operationen, numerisches Schlussfolgern und quantitative Problemlösung (Jäger et al., 1997)."
-}, {
-  id: "fi",
-  en: "Figural Abilities",
-  de: "Figurale Fähigkeiten",
-  t: 2,
-  bis: true,
-  def_en: "Figural-pictorial thinking: processing that requires figural-pictorial and/or spatial imagination. Captures the ability to mentally manipulate and reason with visual-spatial information (Jäger et al., 1997).",
-  def_de: "Anschauungsgebundenes, figural-bildhaftes Denken: Bearbeitung, die figural-bildhaftes und/oder räumliches Vorstellen erfordert. Erfasst die Fähigkeit, visuell-räumliche Informationen mental zu verarbeiten und damit zu schlussfolgern (Jäger et al., 1997)."
-}, {
-  id: "ve",
-  en: "Verbal Abilities",
-  de: "Verbale Fähigkeiten",
-  t: 2,
-  bis: true,
-  def_en: "Language-bound thinking: the degree of acquisition and availability of the relational system of language. Captures how well individuals can operate within linguistic frameworks, including vocabulary, verbal comprehension, and language-based reasoning (Jäger et al., 1997).",
-  def_de: "Sprachgebundenes Denken: Grad der Aneignung und Verfügbarkeit des Beziehungssystems Sprache. Erfasst, wie gut Personen innerhalb sprachlicher Bezugssysteme agieren — Wortschatz, Sprachverständnis und sprachbasiertes Schlussfolgern (Jäger et al., 1997)."
-}, {
-  id: "idd",
-  en: "Interdisciplinary Thinking",
-  de: "Interdisziplinäres Denken",
-  t: 2,
-  def_en: "Capacity to integrate knowledge and modes of thinking from two or more disciplines to produce cognitive advancement — explaining phenomena, solving problems, or creating products in ways impossible through single-disciplinary means (Boix Mansilla et al., 2000).",
-  def_de: "Fähigkeit, Wissen und Denkweisen aus zwei oder mehr Disziplinen zu integrieren, um kognitive Fortschritte zu erzielen — Phänomene zu erklären, Probleme zu lösen oder Produkte zu schaffen auf eine durch rein disziplinäre Mittel unmögliche Weise (Boix Mansilla et al., 2000)."
-}, {
-  id: "cn",
-  en: "Concentration",
-  de: "Konzentration",
-  t: 2,
-  def_en: "Capacity to remain attentive and task-focused during academic tasks. Encompasses sustaining attention over extended periods, resisting distractions, and maintaining cognitive engagement with the material at hand (Richardson et al., 2012).",
-  def_de: "Fähigkeit, bei akademischen Aufgaben aufmerksam und fokussiert zu bleiben. Umfasst das Aufrechterhalten der Aufmerksamkeit über längere Zeiträume, das Widerstehen von Ablenkungen und die kognitive Beschäftigung mit dem vorliegenden Material (Richardson et al., 2012)."
-}, {
-  id: "sk",
-  en: "Scientific Understanding",
-  de: "Naturwissenschaftliches Verständnis",
-  t: 2,
-  def_en: "Foundational knowledge and understanding of concepts, principles, and phenomena in the natural sciences. Provides the disciplinary basis for engaging with scientific content, explaining phenomena, and building further domain-specific expertise (OECD, 2016).",
-  def_de: "Grundlegendes Wissen und Verständnis von Konzepten, Prinzipien und Phänomenen der Naturwissenschaften. Bildet die fachliche Basis, um sich mit wissenschaftlichen Inhalten auseinanderzusetzen, Phänomene zu erklären und weitere fachspezifische Expertise aufzubauen (OECD, 2016)."
-}, {
-  id: "ss",
-  en: "Scientific Skills",
-  de: "Wissenschaftliche Arbeitstechniken",
-  t: 2,
-  def_en: "Methods of scientific inquiry, reasoning, and argumentation, including explaining phenomena scientifically, evaluating and designing investigations, and interpreting data and evidence. Shared across disciplines as systematic, evidence-based reasoning (Fischer et al., 2014).",
-  def_de: "Methoden wissenschaftlicher Erkenntnisgewinnung, des Schlussfolgerns und des Argumentierens, einschließlich Phänomene wissenschaftlich zu erklären, Untersuchungen zu bewerten und zu planen sowie Daten und Evidenz zu interpretieren. Disziplinübergreifend als systematisches, evidenzbasiertes Schlussfolgern (Fischer et al., 2014)."
-}, {
-  id: "ep",
-  en: "English Proficiency",
-  de: "Englischkenntnisse",
-  t: 2,
-  def_en: "Ability to use English across the four core skills: listening, reading, writing, and speaking. Essential for understanding English-language literature, participating in international academic discourse, and producing scientific texts. Proficiency levels defined by the CEFR from A1 to C2 (Council of Europe, 2020).",
-  def_de: "Fähigkeit, Englisch in den vier Kernfertigkeiten Hören, Lesen, Schreiben und Sprechen einzusetzen. Unerlässlich für englischsprachige Fachliteratur, internationale akademische Kommunikation und wissenschaftliche Texte. Kompetenzstufen nach GER von A1 bis C2 (Europarat, 2020)."
-}, {
-  id: "lc",
-  en: "Learning Skills",
-  de: "Lernkompetenz",
-  t: 2,
-  def_en: "Use of cognitive, metacognitive, and resource-based strategies to regulate one's own learning. Includes planning, monitoring, and adjusting the learning process, and making effective use of internal and external learning resources (Wild & Schiefele, 1994).",
-  def_de: "Einsatz kognitiver, metakognitiver und ressourcenbezogener Strategien zur Regulation des eigenen Lernens. Umfasst das Planen, Überwachen und Anpassen des Lernprozesses sowie die effektive Nutzung interner und externer Lernressourcen (Wild & Schiefele, 1994)."
-}, {
-  id: "sf",
-  en: "Demand and Recovery Regulation",
-  de: "Belastungs- und Erholungsregulation",
-  t: 2,
-  def_en: "Active behavior aimed at ensuring one's own psychological and physical well-being. Involves consciously attending to health through nutrition, sleep, physical activity, social interactions, relaxation, and stress management (Dahl & Dlugosch, 2020).",
-  def_de: "Aktives Handeln zur Sicherstellung des eigenen psychischen und physischen Wohlbefindens. Umfasst bewusstes Kümmern um die Gesundheit durch Ernährung, Schlaf, Bewegung, soziale Kontakte, Entspannung und Stressmanagement (Dahl & Dlugosch, 2020)."
-}, {
-  id: "ra",
-  en: "Reflective Ability",
-  de: "Reflexionsfähigkeit",
-  t: 2,
-  def_en: "Capacity to understand one's own thoughts, feelings, and behavior, and to analyze and question them for deeper self-knowledge and continued improvement (Soto et al., 2022).",
-  def_de: "Fähigkeit, das eigene Denken, Fühlen und Handeln zu verstehen sowie zu analysieren und zu hinterfragen, um tiefere Selbsterkenntnis und kontinuierliche Verbesserung zu erreichen (Soto et al., 2022)."
-}, {
-  id: "re",
-  en: "Resilience",
-  de: "Resilienz",
-  t: 2,
-  def_en: "Ability to bounce back and recover from stress, adapting to difficult or challenging experiences through mental, emotional, and behavioral flexibility (Smith et al., 2008).",
-  def_de: "Fähigkeit, sich von Stress zu erholen und nach Belastungen wieder ins Gleichgewicht zu kommen, indem man sich durch mentale, emotionale und verhaltensbezogene Flexibilität an schwierige Erfahrungen anpasst (Smith et al., 2008)."
-}, {
-  id: "es",
-  en: "Emotional Stability",
-  de: "Emotionale Stabilität",
-  t: 1,
-  b5: true,
-  def_en: "Positive pole of the Big Five dimension Neuroticism. Characterized by low anxiety, emotional balance, ability to delay gratification, and reduced vulnerability to stressors. Associated with remaining calm under pressure and lower test anxiety (Mammadov, 2022).",
-  def_de: "Positiver Pol der Big-Five-Dimension Neurotizismus. Gekennzeichnet durch geringe Ängstlichkeit, emotionale Ausgeglichenheit, Fähigkeit zur Bedürfnisaufschiebung und geringere Anfälligkeit gegenüber Stressoren. Verbunden mit Ruhe unter Druck und geringerer Prüfungsangst (Mammadov, 2022)."
-}, {
-  id: "op",
-  en: "Openness",
-  de: "Offenheit",
-  t: 2,
-  b5: true,
-  def_en: "Big Five personality dimension characterized by intellectual curiosity, imagination, and openness to new experiences. Students high in openness are more willing to consider new ideas and better able to manage new learning essential to academic achievement (Mammadov, 2022).",
-  def_de: "Big-Five-Persönlichkeitsdimension, gekennzeichnet durch intellektuelle Neugier, Phantasiereichtum und Aufgeschlossenheit gegenüber neuen Erfahrungen. Studierende mit hoher Offenheit sind eher bereit, neue Ideen zu erwägen und neues Lernmaterial besser zu verarbeiten (Mammadov, 2022)."
-}, {
-  id: "ag",
-  en: "Agreeableness",
-  de: "Verträglichkeit",
-  t: 2,
-  b5: true,
-  def_en: "Big Five personality dimension characterized by being trusting, empathetic, and cooperative. Agreeable individuals show greater cooperation with instructors and peers, facilitating the learning process, and attend classes more consistently (Mammadov, 2022).",
-  def_de: "Big-Five-Persönlichkeitsdimension, gekennzeichnet durch Vertrauenswürdigkeit, Empathie und Kooperationsbereitschaft. Verträgliche Personen zeigen mehr Kooperation mit Lehrenden und Mitstudierenden, was den Lernprozess fördert (Mammadov, 2022)."
-}, {
-  id: "lt",
-  en: "Low Test Anxiety",
-  de: "Geringe Prüfungsangst",
-  t: 2,
-  def_en: "Absence of debilitating worry and physiological arousal in testing situations. Low test anxiety means these reactions do not disrupt performance, supporting focused work under evaluation (Pintrich et al., 1991).",
-  def_de: "Fehlen beeinträchtigender Sorge und physiologischer Erregung in Prüfungssituationen. Geringe Prüfungsangst bedeutet, dass diese Reaktionen die Leistung nicht stören und fokussiertes Arbeiten unter Bewertung ermöglichen (Pintrich et al., 1991)."
-}, {
-  id: "tw",
-  en: "Teamwork",
-  de: "Teamarbeit",
-  t: 2,
-  def_en: "Capacity to work effectively with others to achieve shared goals. Involves coordinating efforts, communicating openly, building mutual trust, and contributing reliably within a team (Soto et al., 2022).",
-  def_de: "Fähigkeit, mit anderen wirksam zusammenzuarbeiten, um gemeinsame Ziele zu erreichen. Umfasst das Koordinieren von Beiträgen, offene Kommunikation, den Aufbau gegenseitigen Vertrauens und verlässliches Mitwirken im Team (Soto et al., 2022)."
-}, {
-  id: "sc",
-  en: "Social Skills",
-  de: "Sozialkompetenz",
-  t: 2,
-  def_en: "Range of skills promoting effective functioning in interpersonal situations. Encompasses three dimensions: Agency Skill (assertive, self-confident behavior), Communion Skill (warm, compassionate behavior), and Interpersonal Resilience (calm, emotionally balanced behavior) (Breil et al., 2022).",
-  def_de: "Spektrum an Fertigkeiten für effektives Handeln in zwischenmenschlichen Situationen. Umfasst drei Dimensionen: Agency Skill (durchsetzungsstarkes Verhalten), Communion Skill (warmherziges Verhalten) und Interpersonelle Resilienz (gelassenes, emotional ausgeglichenes Verhalten) (Breil et al., 2022)."
-}, {
-  id: "nc",
-  en: "Need for Cognition",
-  de: "Kognitionsbedürfnis",
-  t: 2,
-  def_en: "Tendency to engage in and enjoy effortful thinking. Individuals high in need for cognition are intrinsically motivated to engage in complex cognitive processing. Positively associated with fluid intelligence, openness, and goal orientation (Cacioppo & Petty, 1982).",
-  def_de: "Tendenz, sich gerne mit anspruchsvollem Denken zu beschäftigen. Personen mit hohem Kognitionsbedürfnis sind intrinsisch motiviert für komplexe kognitive Verarbeitung. Positiv assoziiert mit fluider Intelligenz, Offenheit und Zielorientierung (Cacioppo & Petty, 1982)."
-}, {
-  id: "mo",
-  en: "Motivation",
-  de: "Motivation",
-  t: 2,
-  def_en: "Self-motivation for and enjoyment of academic learning and tasks. Drives the initiation and persistence of goal-directed study behavior through expectancy beliefs, values, and goal orientations (Richardson et al., 2012).",
-  def_de: "Selbstmotivation für und Freude an akademischem Lernen und akademischen Aufgaben. Treibt die Initiierung und Aufrechterhaltung zielgerichteten Studierverhaltens über Erwartungsüberzeugungen, Werte und Zielorientierungen an (Richardson et al., 2012)."
-},
-// Tier 3: Program-Specific — BIS first, then rest matching poster
-{
-  id: "ps",
-  en: "Processing Speed",
-  de: "Bearbeitungsgeschwindigkeit",
-  t: 3,
-  bis: true,
-  def_en: "Speed of work, ease of comprehension, and concentration when solving simply structured tasks of low difficulty. Captures quick and accurate performance on simple cognitive tasks / mental speed (Jäger et al., 1997).",
-  def_de: "Arbeitstempo, Auffassungsleichtigkeit und Konzentration beim Lösen einfach strukturierter Aufgaben von geringem Schwierigkeitsniveau. Erfasst schnelle und genaue Leistung bei einfachen kognitiven Aufgaben / mentale Geschwindigkeit (Jäger et al., 1997)."
-}, {
-  id: "tm",
-  en: "Technical-Mechanical Skills",
-  de: "Technisch-mechanische Fähigkeiten",
-  t: 3,
-  def_en: "Capacity to infer the properties of and relations between components in a technical or mechanical system from given information. Involves understanding physical forces and mechanical principles such as levers, gears, motion, and force (Hartweg, 2010).",
-  def_de: "Fähigkeit, aus gegebenen Informationen die Eigenschaften von und Beziehungen zwischen Komponenten in einem technischen oder mechanischen System abzuleiten. Umfasst das Verständnis physikalischer Kräfte und mechanischer Prinzipien wie Hebel, Zahnräder, Bewegung und Kraft (Hartweg, 2010)."
-}, {
-  id: "ex",
-  en: "Extraversion",
-  de: "Extraversion",
-  t: 3,
-  b5: true,
-  def_en: "Big Five personality dimension characterized by assertiveness, sociability, and positive engagement in social interactions. In academic contexts, extraversion may be beneficial for collaborative work but can limit effort regulation through distraction by social activities (Mammadov, 2022).",
-  def_de: "Big-Five-Persönlichkeitsdimension, gekennzeichnet durch Durchsetzungsfähigkeit, Geselligkeit und positives Engagement in sozialen Interaktionen. Im akademischen Kontext kann Extraversion für kooperatives Arbeiten förderlich sein, aber durch Ablenkung durch soziale Aktivitäten die Anstrengungsregulation einschränken (Mammadov, 2022)."
-}, {
-  id: "rc",
-  en: "Feedback Literacy",
-  de: "Feedbackkompetenz",
-  t: 3,
-  def_en: "Capacity to understand, interpret, and make use of feedback to improve one's own work and learning. Encompasses appreciating the value of feedback, making evaluative judgments, managing the emotions feedback can provoke, and taking action in response (Carless & Boud, 2018).",
-  def_de: "Fähigkeit, Feedback zu verstehen, zu interpretieren und zur Verbesserung der eigenen Arbeit und des eigenen Lernens zu nutzen. Umfasst die Wertschätzung von Feedback, das Treffen evaluativer Urteile, den Umgang mit den durch Feedback ausgelösten Emotionen und das Ableiten konkreter Handlungen (Carless & Boud, 2018)."
-}, {
-  id: "mu",
-  en: "Musicality",
-  de: "Musikalität",
-  t: 3,
-  def_en: "Capacity to perceive and discriminate musical elements such as melody, rhythm, tuning, and timbre. Ranges from basic perceptual abilities to highly expert musical performance (Zentner & Strauss, 2017).",
-  def_de: "Fähigkeit, musikalische Elemente wie Melodie, Rhythmus, Stimmung und Klangfarbe wahrzunehmen und zu unterscheiden. Reicht von basalen Wahrnehmungsfähigkeiten bis zu hochexpertisierten musikalischen Leistungen (Zentner & Strauss, 2017)."
-}, {
-  id: "dl",
-  en: "Digital Literacy",
-  de: "Digitale Kompetenz",
-  t: 3,
-  def_en: "Ability to access, manage, understand, evaluate, and create information through digital technologies. Involves confident, critical, and responsible use of digital technologies for learning, work, and societal participation. Includes information literacy, digital content creation, and problem-solving (Vuorikari et al., 2022).",
-  def_de: "Fähigkeit, Informationen über digitale Technologien zu finden, zu verwalten, zu verstehen, zu bewerten und zu erstellen. Umfasst selbstbewussten, kritischen und verantwortungsvollen Umgang mit digitalen Technologien zum Lernen, Arbeiten und zur gesellschaftlichen Teilhabe (Vuorikari et al., 2022)."
-}, {
-  id: "em",
-  en: "Empathy",
-  de: "Empathie",
-  t: 3,
-  def_en: "Capacity to perceive, understand, and share other people's thoughts and feelings, taking their perspective and responding with appropriate care and warmth (Soto et al., 2022).",
-  def_de: "Fähigkeit, die Gedanken und Gefühle anderer wahrzunehmen, zu verstehen und nachzuempfinden, ihre Perspektive einzunehmen und mit angemessener Anteilnahme und Wärme zu reagieren (Soto et al., 2022)."
-}, {
-  id: "pr",
-  en: "Presentation Skills",
-  de: "Präsentationsfähigkeiten",
-  t: 3,
-  def_en: "Capacity to communicate one's thoughts and present arguments effectively to an audience. Encompasses planning and organizing content, clear verbal delivery, effective use of visual aids, confident body language, responding to questions, and managing stage fright (Soto et al., 2022).",
-  def_de: "Fähigkeit, eigene Gedanken zu kommunizieren und Argumente wirksam vor einem Publikum darzustellen. Umfasst Planung und Gliederung von Inhalten, klare verbale Vermittlung, effektiven Einsatz visueller Hilfsmittel, selbstsicheres Auftreten, das Eingehen auf Fragen und den Umgang mit Lampenfieber (Soto et al., 2022)."
-}, {
-  id: "pg",
-  en: "Programming",
-  de: "Programmierkenntnisse",
-  t: 3,
-  def_en: "Ability to design algorithms and implement them in programming languages to solve problems systematically. Encompasses understanding fundamental concepts (variables, control structures, data structures), translating logical processes into executable code, debugging, and testing. Increasingly relevant across disciplines for data analysis, simulation, and automation (Weintrop et al., 2016).",
-  def_de: "Fähigkeit, Algorithmen zu entwerfen und in Programmiersprachen umzusetzen, um Probleme systematisch zu lösen. Umfasst grundlegende Konzepte (Variablen, Kontrollstrukturen, Datenstrukturen), Übersetzen logischer Prozesse in ausführbaren Code, Debugging und Testen. Zunehmend relevant in vielen Disziplinen für Datenanalyse, Simulation und Automatisierung (Weintrop et al., 2016)."
-}];
+const ALL_COMPS = [{
+    id: "pc",
+    en: "Processing Capacity",
+    de: "Verarbeitungskapazität",
+    t: 1,
+    bis: true,
+    def_en: "Cognitive capacity for complex reasoning and abstract problem solving (Jäger et al., 1997).",
+    def_de: "Kognitive Kapazität für komplexes Schlussfolgern und abstraktes Problemlösen (Jäger et al., 1997)."
+  }, {
+    id: "cr",
+    en: "Creativity",
+    de: "Kreativität",
+    t: 2,
+    bis: true,
+    def_en: "Capacity to generate novel and useful ideas with flexible thinking (Jäger et al., 1997).",
+    def_de: "Fähigkeit, neuartige und brauchbare Ideen mit flexiblem Denken hervorzubringen (Jäger et al., 1997)."
+  }, {
+    id: "se",
+    en: "Self-Efficacy",
+    de: "Selbstwirksamkeit",
+    t: 1,
+    def_en: "Belief in one's general capability to master demands and challenges (Bandura, 1977).",
+    def_de: "Überzeugung, den eigenen Anforderungen und Herausforderungen grundsätzlich gewachsen zu sein (Bandura, 1977)."
+  }, {
+    id: "sm",
+    en: "Self-Management",
+    de: "Selbstmanagement",
+    sub_en: "(incl. Low Procrastination)",
+    sub_de: "(inkl. geringe Prokrastination)",
+    t: 1,
+    def_en: "Capacity to set goals, plan, organize, and complete one's studies in a timely manner (Soto et al., 2022).",
+    def_de: "Fähigkeit, Ziele zu setzen, zu planen, zu organisieren und das Studium termingerecht zu bewältigen (Soto et al., 2022)."
+  }, {
+    id: "er",
+    en: "Effort Regulation",
+    de: "Anstrengungsregulation",
+    t: 1,
+    def_en: "Sustaining effort and attention despite difficulty, distraction, and uninteresting tasks (Pintrich et al., 1991).",
+    def_de: "Anstrengung und Aufmerksamkeit trotz Schwierigkeiten, Ablenkung und uninteressanter Aufgaben aufrechterhalten (Pintrich et al., 1991)."
+  }, {
+    id: "co",
+    en: "Conscientiousness",
+    de: "Gewissenhaftigkeit",
+    t: 1,
+    b5: true,
+    def_en: "Tendency toward self-discipline, organization, and achievement orientation (Mammadov, 2022).",
+    def_de: "Neigung zu Selbstdisziplin, Organisation und Leistungsorientierung (Mammadov, 2022)."
+  }, {
+    id: "me",
+    en: "Memory",
+    de: "Merkfähigkeit",
+    t: 2,
+    bis: true,
+    def_en: "Capacity to encode, store, and recall information (Jäger et al., 1997).",
+    def_de: "Fähigkeit, Informationen einzuprägen, zu speichern und abzurufen (Jäger et al., 1997)."
+  }, {
+    id: "nu",
+    en: "Numerical Abilities",
+    de: "Numerische Fähigkeiten",
+    t: 2,
+    bis: true,
+    def_en: "Cognitive ability to process and reason with numerical information (Jäger et al., 1997).",
+    def_de: "Kognitive Fähigkeit, numerische Informationen zu verarbeiten und mit ihnen zu schlussfolgern (Jäger et al., 1997)."
+  }, {
+    id: "fi",
+    en: "Figural Abilities",
+    de: "Figurale Fähigkeiten",
+    t: 2,
+    bis: true,
+    def_en: "Cognitive ability to process and reason with figural and spatial information (Jäger et al., 1997).",
+    def_de: "Kognitive Fähigkeit, figurale und räumliche Informationen zu verarbeiten und mit ihnen zu schlussfolgern (Jäger et al., 1997)."
+  }, {
+    id: "ve",
+    en: "Verbal Abilities",
+    de: "Verbale Fähigkeiten",
+    t: 2,
+    bis: true,
+    def_en: "Cognitive ability to process and reason with verbal information (Jäger et al., 1997).",
+    def_de: "Kognitive Fähigkeit, verbale Informationen zu verarbeiten und mit ihnen zu schlussfolgern (Jäger et al., 1997)."
+  }, {
+    id: "idd",
+    en: "Interdisciplinary Thinking",
+    de: "Interdisziplinäres Denken",
+    t: 2,
+    def_en: "Capacity to integrate knowledge and modes of thinking across disciplines (Boix Mansilla et al., 2000).",
+    def_de: "Fähigkeit, Wissen und Denkweisen über Disziplingrenzen hinweg zu integrieren (Boix Mansilla et al., 2000)."
+  }, {
+    id: "cn",
+    en: "Concentration",
+    de: "Konzentration",
+    t: 2,
+    def_en: "Capacity to remain attentive and task-focused during academic tasks (Richardson et al., 2012).",
+    def_de: "Fähigkeit, während akademischer Aufgaben aufmerksam und bei der Sache zu bleiben (Richardson et al., 2012)."
+  }, {
+    id: "sk",
+    en: "Scientific Understanding",
+    de: "Naturwissenschaftliches Verständnis",
+    t: 2,
+    def_en: "Foundational knowledge of the natural sciences (OECD, 2016).",
+    def_de: "Grundlegendes Wissen der Naturwissenschaften (OECD, 2016)."
+  }, {
+    id: "ss",
+    en: "Scientific Skills",
+    de: "Wissenschaftliche Arbeitstechniken",
+    t: 2,
+    def_en: "Methods of scientific inquiry, reasoning, and evidence evaluation (Fischer et al., 2014).",
+    def_de: "Methoden wissenschaftlicher Erkenntnisgewinnung, des Schlussfolgerns und der Bewertung von Evidenz (Fischer et al., 2014)."
+  }, {
+    id: "ep",
+    en: "English Proficiency",
+    de: "Englischkenntnisse",
+    t: 2,
+    def_en: "Command of English across listening, reading, writing, and speaking (Council of Europe, 2020).",
+    def_de: "Beherrschung des Englischen in Hören, Lesen, Schreiben und Sprechen (Europarat, 2020)."
+  }, {
+    id: "lc",
+    en: "Learning Skills",
+    de: "Lernkompetenz",
+    t: 2,
+    def_en: "Use of cognitive, resource-based, and metacognitive learning strategies to regulate one's own learning (Wild & Schiefele, 1994).",
+    def_de: "Einsatz kognitiver, ressourcenbezogener und metakognitiver Lernstrategien zur Regulation des eigenen Lernens (Wild & Schiefele, 1994)."
+  }, {
+    id: "sf",
+    en: "Stress-Sensitive Self-Care",
+    de: "Stresssensible Selbstfürsorge",
+    t: 2,
+    def_en: "Ability to perceive one's own needs, limits, and signs of strain and to derive appropriate protective and restorative actions (Cook-Cottone & Guyker, 2018).",
+    def_de: "Fähigkeit, eigene Bedürfnisse, Grenzen und Belastungssignale wahrzunehmen und daraus angemessene schützende und erholende Handlungen abzuleiten (Cook-Cottone & Guyker, 2018)."
+  }, {
+    id: "ra",
+    en: "Reflective Ability",
+    de: "Reflexionsfähigkeit",
+    t: 2,
+    def_en: "Capacity to understand one's own thoughts and feelings (Soto et al., 2022).",
+    def_de: "Fähigkeit, die eigenen Gedanken und Gefühle zu verstehen (Soto et al., 2022)."
+  }, {
+    id: "re",
+    en: "Resilience",
+    de: "Resilienz",
+    t: 2,
+    def_en: "Ability to bounce back and recover from stress (Smith et al., 2008).",
+    def_de: "Fähigkeit, sich nach Belastungen wieder zu erholen (Smith et al., 2008)."
+  }, {
+    id: "es",
+    en: "Emotional Stability",
+    de: "Emotionale Stabilität",
+    t: 1,
+    b5: true,
+    def_en: "Low vulnerability to unpleasant emotions such as anxiety and stress (Mammadov, 2022).",
+    def_de: "Geringe Anfälligkeit für unangenehme Emotionen wie Angst und Stress (Mammadov, 2022)."
+  }, {
+    id: "op",
+    en: "Openness",
+    de: "Offenheit",
+    t: 2,
+    b5: true,
+    def_en: "Intellectual curiosity, creativity, and preference for novelty (Mammadov, 2022).",
+    def_de: "Intellektuelle Neugier, Kreativität und Vorliebe für Neues (Mammadov, 2022)."
+  }, {
+    id: "ag",
+    en: "Agreeableness",
+    de: "Verträglichkeit",
+    t: 2,
+    b5: true,
+    def_en: "Tendency toward prosocial, cooperative rather than antagonistic behavior (Mammadov, 2022).",
+    def_de: "Neigung zu prosozialem, kooperativem statt antagonistischem Verhalten (Mammadov, 2022)."
+  }, {
+    id: "lt",
+    en: "Low Test Anxiety",
+    de: "Geringe Prüfungsangst",
+    t: 2,
+    def_en: "Absence of debilitating worry and arousal in testing situations (Pintrich et al., 1991).",
+    def_de: "Fehlen beeinträchtigender Sorge und Erregung in Prüfungssituationen (Pintrich et al., 1991)."
+  }, {
+    id: "tw",
+    en: "Teamwork",
+    de: "Teamarbeit",
+    t: 2,
+    def_en: "Capacity to work with others to achieve shared goals (Soto et al., 2022).",
+    def_de: "Fähigkeit, mit anderen zusammenzuarbeiten, um gemeinsame Ziele zu erreichen (Soto et al., 2022)."
+  }, {
+    id: "sc",
+    en: "Social Skills",
+    de: "Sozialkompetenz",
+    t: 2,
+    def_en: "Skills promoting effective functioning in interpersonal situations across agency, communion, and interpersonal calmness (Breil et al., 2022).",
+    def_de: "Fertigkeiten für wirksames Handeln in zwischenmenschlichen Situationen über Durchsetzung, Verbundenheit und interpersonelle Gelassenheit hinweg (Breil et al., 2022)."
+  }, {
+    id: "nc",
+    en: "Need for Cognition",
+    de: "Kognitionsbedürfnis",
+    t: 2,
+    def_en: "General tendency to enjoy activities involving effortful cognition (Cacioppo & Petty, 1982).",
+    def_de: "Allgemeine Neigung, Tätigkeiten mit hohem Denkaufwand zu genießen (Cacioppo & Petty, 1982)."
+  }, {
+    id: "mo",
+    en: "Academic Motivation",
+    de: "Studienbezogene Motivation",
+    t: 2,
+    def_en: "Academic behavior energized by intrinsic interest, personal value, and internalized reasons (Howard et al., 2021).",
+    def_de: "Studienverhalten, das durch intrinsisches Interesse, persönlichen Wert und internalisierte Gründe angetrieben wird (Howard et al., 2021)."
+  }, {
+    id: "ps",
+    en: "Processing Speed",
+    de: "Bearbeitungsgeschwindigkeit",
+    t: 3,
+    bis: true,
+    def_en: "Cognitive speed of information processing in mental operations (Jäger et al., 1997).",
+    def_de: "Kognitive Geschwindigkeit der Informationsverarbeitung bei mentalen Operationen (Jäger et al., 1997)."
+  }, {
+    id: "tm",
+    en: "Technical-Mechanical Skills",
+    de: "Technisch-mechanisches Verständnis",
+    t: 3,
+    def_en: "Capacity to infer properties of and relations between components in a technical system from given information (Hartweg, 2010).",
+    def_de: "Fähigkeit, aus gegebenen Informationen Eigenschaften von und Beziehungen zwischen Komponenten eines technischen Systems zu erschließen (Hartweg, 2010)."
+  }, {
+    id: "ex",
+    en: "Extraversion",
+    de: "Extraversion",
+    t: 3,
+    b5: true,
+    def_en: "Sociability, activity, and seeking stimulation in the company of others (Mammadov, 2022).",
+    def_de: "Geselligkeit, Aktivität und Suche nach Anregung in Gesellschaft anderer (Mammadov, 2022)."
+  }, {
+    id: "rc",
+    en: "Feedback Literacy",
+    de: "Feedbackkompetenz",
+    t: 3,
+    def_en: "Capacity to make sense of critical feedback, manage its emotional impact, and use it to improve one's work (Carless & Boud, 2018).",
+    def_de: "Fähigkeit, kritisches Feedback zu verstehen, seine emotionale Wirkung zu bewältigen und es zur Verbesserung der eigenen Arbeit zu nutzen (Carless & Boud, 2018)."
+  }, {
+    id: "mu",
+    en: "Musicality",
+    de: "Musikalität",
+    t: 3,
+    def_en: "Capacity to perceive and discriminate musical elements such as melody, rhythm, tuning, and timbre (Zentner & Strauß, 2017).",
+    def_de: "Fähigkeit, musikalische Elemente wie Melodie, Rhythmus, Stimmung und Klangfarbe wahrzunehmen und zu unterscheiden (Zentner & Strauß, 2017)."
+  }, {
+    id: "isk",
+    en: "Information Seeking",
+    de: "Informationssuche",
+    t: 3,
+    def_en: "Ability to obtain additional information when there are gaps in knowledge or difficulties in understanding (Wild & Schiefele, 1994).",
+    def_de: "Fähigkeit, zusätzliche Informationen zu beschaffen, wenn Wissenslücken oder Verständnisschwierigkeiten bestehen (Wild & Schiefele, 1994)."
+  }, {
+    id: "em",
+    en: "Empathy",
+    de: "Empathie",
+    t: 3,
+    def_en: "Affective response similar to another's perceived or imagined emotion, not one's own (Cuff et al., 2016).",
+    def_de: "Affektive Reaktion, die der wahrgenommenen oder vorgestellten Emotion einer anderen Person ähnelt und nicht der eigenen (Cuff et al., 2016)."
+  }, {
+    id: "pr",
+    en: "Presentation Skills",
+    de: "Präsentationsfähigkeiten",
+    t: 3,
+    def_en: "Capacity to communicate one's thoughts and present arguments effectively (Soto et al., 2022).",
+    def_de: "Fähigkeit, eigene Gedanken zu kommunizieren und Argumente wirksam darzustellen (Soto et al., 2022)."
+  }, {
+    id: "pg",
+    en: "Programming",
+    de: "Programmierkenntnisse",
+    t: 3,
+    def_en: "Ability to solve problems by developing and testing code (Weintrop et al., 2016).",
+    def_de: "Fähigkeit, Probleme durch das Entwickeln und Testen von Code zu lösen (Weintrop et al., 2016)."
+  }];
 
 // ── RIASEC Radar (SVG, monochrome RWTH blue like the screenshot) ──
 function RIASECRadar({
@@ -1353,7 +1311,7 @@ function RIASECRadar({
   return /*#__PURE__*/React.createElement("div", {
     style: {
       background: C.bg,
-      borderRadius: 16,
+      borderRadius: 12,
       padding: "20px 10px 14px",
       border: `1.5px solid ${C.g3}`
     }
@@ -1504,7 +1462,7 @@ function RIASECRadar({
       marginTop: 8,
       padding: "10px 14px",
       background: C.g0,
-      borderRadius: 10,
+      borderRadius: 8,
       borderLeft: `3px solid ${p.code.includes(d) ? C.blue : "#CFD1D2"}`,
       fontSize: 13.5,
       lineHeight: 1.6,
@@ -1531,7 +1489,7 @@ function BISMatrix({
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
-      borderRadius: 14,
+      borderRadius: 12,
       overflow: "hidden",
       border: `1.5px solid ${C.g3}`,
       background: C.w,
@@ -1624,7 +1582,7 @@ function BISMatrix({
         style: {
           width: 36,
           height: 36,
-          borderRadius: 10,
+          borderRadius: 8,
           background: `linear-gradient(135deg, ${C.bp}, ${C.blue})`,
           display: "flex",
           alignItems: "center",
@@ -1645,7 +1603,7 @@ function BISMatrix({
         style: {
           width: 36,
           height: 36,
-          borderRadius: 10,
+          borderRadius: 8,
           border: `2px dashed ${C.g3}`,
           background: C.g0
         }
@@ -1719,7 +1677,7 @@ function App() {
       fontSize: 10,
       fontWeight: 700,
       padding: "2px 9px",
-      borderRadius: 10,
+      borderRadius: 8,
       letterSpacing: .5,
       textTransform: "uppercase"
     }
@@ -1763,7 +1721,7 @@ function App() {
         padding: "12px 16px",
         cursor: "pointer",
         border: `1.5px solid ${open ? TC[c.t] : C.g3}`,
-        boxShadow: open ? "0 4px 20px rgba(0,84,159,.08)" : "0 1px 3px rgba(0,0,0,.02)",
+        boxShadow: open ? "0 10px 30px rgba(0,50,110,.12)" : "0 4px 18px rgba(0,50,110,.07)",
         transition: "all .2s"
       }
     }, /*#__PURE__*/React.createElement("div", {
@@ -1809,18 +1767,18 @@ function App() {
   return /*#__PURE__*/React.createElement("div", {
     style: {
       minHeight: "100vh",
-      background: `linear-gradient(180deg,${C.bg} 0%,#F8FAFB 280px,${C.g0} 100%)`,
-      fontFamily: "'Segoe UI','Helvetica Neue',Arial,sans-serif"
+      background: C.w,
+      fontFamily: "'Helvetica Neue',HelveticaNeue,Helvetica,'Nimbus Sans','Liberation Sans',Arial,sans-serif"
     }
-  }, /*#__PURE__*/React.createElement("style", null, `@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}} input:focus{outline:none;border-color:${C.blue}!important;box-shadow:0 0 0 3px rgba(0,84,159,.12)!important} *{box-sizing:border-box}`), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("style", null, `@keyframes fi{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}} input:focus{outline:none;border-color:${C.blue}!important;box-shadow:0 0 0 3px rgba(0,84,159,.12)!important} *{box-sizing:border-box} body{margin:0;background:#fff;-webkit-font-smoothing:antialiased} h1,h2,h3{letter-spacing:-.015em;text-wrap:balance} p{text-wrap:pretty} a:hover{text-decoration:underline} button{font-family:inherit} ::selection{background:#C7DDF2}`), /*#__PURE__*/React.createElement("div", {
     style: {
-      background: `linear-gradient(135deg,${C.bd},${C.blue})`,
-      padding: "28px 24px 20px",
+      background: "linear-gradient(115deg,#00437E,#00549F 68%,#0F5FA8)",
+      padding: "34px 24px 34px",
       color: C.w
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
-      maxWidth: 960,
+      maxWidth: 1180,
       margin: "0 auto"
     }
   }, /*#__PURE__*/React.createElement("div", {
@@ -1881,7 +1839,7 @@ function App() {
     }
   }, t("Explore competency requirements across 34 Bachelor programs based on a mixed-methods analysis with N = 1,512 participants (students and academic staff). Browse the three-tier competency model, compare program-specific profiles, and discover how programs cluster by their competency and interest patterns.", "Entdecken Sie Kompetenzanforderungen über 34 Bachelorstudiengänge basierend auf einer Mixed-Methods-Analyse mit N = 1.512 Teilnehmenden (Studierende und wissenschaftliches Personal). Durchsuchen Sie das dreistufige Kompetenzmodell, vergleichen Sie studiengangsspezifische Profile und entdecken Sie, wie Studiengänge nach ihren Kompetenz- und Interessenmustern clustern.")))), /*#__PURE__*/React.createElement("div", {
     style: {
-      maxWidth: 960,
+      maxWidth: 1180,
       margin: "0 auto",
       padding: "12px 24px 0",
       display: "flex",
@@ -1907,19 +1865,21 @@ function App() {
       setExp(null);
     },
     style: {
-      padding: "8px 18px",
-      fontSize: 13,
-      fontWeight: view === tab.id ? 700 : 500,
+      padding: "9px 18px",
+      fontSize: 12,
+      fontWeight: 700,
+      letterSpacing: ".1em",
+      textTransform: "uppercase",
       color: view === tab.id ? C.w : C.blue,
-      background: view === tab.id ? C.blue : "transparent",
-      border: `1.5px solid ${view === tab.id ? C.blue : C.bl}`,
-      borderRadius: 10,
+      background: view === tab.id ? C.blue : C.w,
+      border: `2px solid ${view === tab.id ? C.blue : C.bp}`,
+      borderRadius: 8,
       cursor: "pointer",
       transition: "all .2s"
     }
   }, t(tab.en, tab.de)))), /*#__PURE__*/React.createElement("div", {
     style: {
-      maxWidth: 960,
+      maxWidth: 1180,
       margin: "0 auto",
       padding: "16px 24px 60px"
     }
@@ -1959,7 +1919,7 @@ function App() {
       fontSize: 12,
       color: C.g5
     }
-  }, t(tier === 1 ? "Universally important across all programs (M ≥ 4.0, low cluster variation)" : tier === 2 ? "Important for multiple programs (M ≥ 3.0, validated in >3 programs)" : "Important for specific programs but not meeting Tier 2 criteria", tier === 1 ? "Universell wichtig in allen Studiengängen (M ≥ 4.0, geringe Clustervariation)" : tier === 2 ? "Wichtig für mehrere Studiengänge (M ≥ 3.0, in >3 Studiengängen validiert)" : "Wichtig für einzelne Studiengänge, ohne die Tier-2-Kriterien zu erfüllen"), " (", tiers[tier].length, ")"))), /*#__PURE__*/React.createElement("div", {
+  }, t(tier === 1 ? "High overall importance (M ≥ 4.0 or 95% CI including 4.0) and no large cluster variation (partial η² < .14)" : tier === 2 ? "Overall importance ≥ 3.0 (or 95% CI including 3.0) and validation in more than three programs with M ≥ 3.0" : "Not meeting the Tier 2 criteria, but rated as important (M ≥ 3.0) in at least one program", tier === 1 ? "Hohe Gesamtwichtigkeit (M ≥ 4,0 oder 95%-KI, das 4,0 einschließt) und keine große Clustervariation (partielles η² < ,14)" : tier === 2 ? "Gesamtwichtigkeit ≥ 3,0 (oder 95%-KI, das 3,0 einschließt) und Bestätigung in mehr als drei Studiengängen mit M ≥ 3,0" : "Erfüllt die Tier-2-Kriterien nicht, aber in mindestens einem Studiengang als wichtig eingestuft (M ≥ 3,0)"), " (", tiers[tier].length, ")"))), /*#__PURE__*/React.createElement("div", {
     style: {
       display: "grid",
       gap: 6,
@@ -2054,7 +2014,7 @@ function App() {
         padding: "12px 16px",
         cursor: "pointer",
         border: `1.5px solid ${open ? "#8EBAE5" : C.g3}`,
-        boxShadow: open ? "0 4px 20px rgba(0,84,159,.08)" : "0 1px 3px rgba(0,0,0,.02)",
+        boxShadow: open ? "0 10px 30px rgba(0,50,110,.12)" : "0 4px 18px rgba(0,50,110,.07)",
         transition: "all .2s"
       }
     }, /*#__PURE__*/React.createElement("div", {
@@ -2127,7 +2087,7 @@ function App() {
       padding: "11px 14px",
       fontSize: 14,
       border: `1.5px solid ${C.g3}`,
-      borderRadius: 10,
+      borderRadius: 8,
       background: C.w,
       marginBottom: 6
     }
@@ -2136,7 +2096,7 @@ function App() {
       maxHeight: 200,
       overflowY: "auto",
       border: `1px solid ${C.g3}`,
-      borderRadius: 10,
+      borderRadius: 8,
       background: C.w
     }
   }, filtered.map(p => {
@@ -2192,8 +2152,8 @@ function App() {
       }
     }, /*#__PURE__*/React.createElement("div", {
       style: {
-        background: `linear-gradient(135deg,${C.bd},${C.blue})`,
-        borderRadius: 14,
+        background: "linear-gradient(115deg,#00437E,#00549F 68%,#0F5FA8)",
+        borderRadius: 12,
         padding: "20px 22px",
         color: C.w,
         marginBottom: 20
@@ -2352,38 +2312,38 @@ function App() {
         id: "op",
         en: "Openness",
         de: "Offenheit",
-        desc_en: "Big Five personality dimension characterized by intellectual curiosity, imagination, and openness to new experiences. Students high in openness are more willing to consider new ideas and better able to manage new learning essential to academic achievement (Mammadov, 2022).",
-        desc_de: "Big-Five-Persönlichkeitsdimension, gekennzeichnet durch intellektuelle Neugier, Phantasiereichtum und Aufgeschlossenheit gegenüber neuen Erfahrungen. Studierende mit hoher Offenheit sind eher bereit, neue Ideen zu erwägen und neues Lernmaterial besser zu verarbeiten (Mammadov, 2022)."
+        desc_en: "Intellectual curiosity, creativity, and preference for novelty (Mammadov, 2022).",
+        desc_de: "Intellektuelle Neugier, Kreativität und Vorliebe für Neues (Mammadov, 2022)."
       }, {
         id: "co",
         en: "Conscientiousness",
         de: "Gewissenhaftigkeit",
         core: true,
-        desc_en: "Big Five personality dimension describing the tendency to be self-disciplined, organized, achievement-oriented, and dependable. Associated with greater motivation to perform well and higher persistence when faced with difficult tasks (Mammadov, 2022).",
-        desc_de: "Big-Five-Persönlichkeitsdimension, die die Tendenz zu Selbstdisziplin, Organisation, Leistungsorientierung und Verlässlichkeit beschreibt. Verbunden mit höherer Leistungsmotivation und größerer Ausdauer bei schwierigen Aufgaben (Mammadov, 2022)."
+        desc_en: "Tendency toward self-discipline, organization, and achievement orientation (Mammadov, 2022).",
+        desc_de: "Neigung zu Selbstdisziplin, Organisation und Leistungsorientierung (Mammadov, 2022)."
       }, {
         id: "ex",
         en: "Extraversion",
         de: "Extraversion",
-        desc_en: "Big Five personality dimension characterized by assertiveness, sociability, and positive engagement in social interactions. In academic contexts, extraversion may be beneficial for collaborative work but can limit effort regulation through distraction by social activities (Mammadov, 2022).",
-        desc_de: "Big-Five-Persönlichkeitsdimension, gekennzeichnet durch Durchsetzungsfähigkeit, Geselligkeit und positives Engagement in sozialen Interaktionen. Im akademischen Kontext kann Extraversion für kooperatives Arbeiten förderlich sein, aber durch Ablenkung durch soziale Aktivitäten die Anstrengungsregulation einschränken (Mammadov, 2022)."
+        desc_en: "Sociability, activity, and seeking stimulation in the company of others (Mammadov, 2022).",
+        desc_de: "Geselligkeit, Aktivität und Suche nach Anregung in Gesellschaft anderer (Mammadov, 2022)."
       }, {
         id: "ag",
         en: "Agreeableness",
         de: "Verträglichkeit",
-        desc_en: "Big Five personality dimension characterized by being trusting, empathetic, and cooperative. Agreeable individuals show greater cooperation with instructors and peers, facilitating the learning process, and attend classes more consistently (Mammadov, 2022).",
-        desc_de: "Big-Five-Persönlichkeitsdimension, gekennzeichnet durch Vertrauenswürdigkeit, Empathie und Kooperationsbereitschaft. Verträgliche Personen zeigen mehr Kooperation mit Lehrenden und Mitstudierenden, was den Lernprozess fördert (Mammadov, 2022)."
+        desc_en: "Tendency toward prosocial, cooperative rather than antagonistic behavior (Mammadov, 2022).",
+        desc_de: "Neigung zu prosozialem, kooperativem statt antagonistischem Verhalten (Mammadov, 2022)."
       }, {
         id: "es",
         en: "Emotional Stability",
         de: "Emotionale Stabilität",
         core: true,
-        desc_en: "Positive pole of the Big Five dimension Neuroticism. Characterized by low anxiety, emotional balance, ability to delay gratification, and reduced vulnerability to stressors. Associated with remaining calm under pressure and lower test anxiety (Mammadov, 2022).",
-        desc_de: "Positiver Pol der Big-Five-Dimension Neurotizismus. Gekennzeichnet durch geringe Ängstlichkeit, emotionale Ausgeglichenheit, Fähigkeit zur Bedürfnisaufschiebung und geringere Anfälligkeit gegenüber Stressoren. Verbunden mit Ruhe unter Druck und geringerer Prüfungsangst (Mammadov, 2022)."
+        desc_en: "Low vulnerability to unpleasant emotions such as anxiety and stress (Mammadov, 2022).",
+        desc_de: "Geringe Anfälligkeit für unangenehme Emotionen wie Angst und Stress (Mammadov, 2022)."
       }];
       return /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("div", {
         style: {
-          borderRadius: 14,
+          borderRadius: 12,
           overflow: "hidden",
           border: `1.5px solid ${C.g3}`,
           background: C.w
@@ -2451,7 +2411,7 @@ function App() {
             marginTop: 8,
             padding: "10px 14px",
             background: C.g0,
-            borderRadius: 10,
+            borderRadius: 8,
             borderLeft: `3px solid ${d.core ? C.grn : C.blue}`,
             fontSize: 13.5,
             lineHeight: 1.6,
@@ -2526,7 +2486,7 @@ function App() {
           color: open ? C.w : C.g9,
           border: `1.5px solid ${open ? isCore ? C.grn : C.blue : isCore ? "#B5D99C" : C.g3}`,
           transition: "all .2s",
-          boxShadow: open ? "0 4px 16px rgba(0,84,159,.1)" : "0 1px 3px rgba(0,0,0,.04)"
+          boxShadow: open ? "0 10px 30px rgba(0,50,110,.12)" : "0 1px 3px rgba(0,0,0,.04)"
         }
       }, /*#__PURE__*/React.createElement("div", {
         style: {
@@ -2735,7 +2695,7 @@ function App() {
     }, t("View →", "Ansehen →"))))));
   })))), /*#__PURE__*/React.createElement("div", {
     style: {
-      maxWidth: 960,
+      maxWidth: 1180,
       margin: "0 auto",
       padding: "0 24px 24px"
     }
@@ -2781,7 +2741,7 @@ function App() {
     }
   }, /*#__PURE__*/React.createElement("div", {
     style: {
-      maxWidth: 960,
+      maxWidth: 1180,
       margin: "0 auto"
     }
   }, /*#__PURE__*/React.createElement("div", null, /*#__PURE__*/React.createElement("span", { style: { fontWeight: 700 } }, t("Zitieren als", "Cite as"), ": "), "Rabe, M., Buitkamp, L. F., & Persike, M. (2026). Towards a comprehensive model of university undergraduate students' competencies: A mixed-methods analysis of core skills for academic success [Poster]. 21. Jahrestagung der Gesellschaft für Hochschulforschung, Paderborn, Germany"), /*#__PURE__*/React.createElement("div", {
